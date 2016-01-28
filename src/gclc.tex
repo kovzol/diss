@@ -1,0 +1,411 @@
+\documentclass[a4paper]{article}
+\usepackage{gclc_proof}
+
+
+\begin{document}
+
+\title{GCLC Prover Output for conjecture ``thm-0110-Parallelogram2'' }
+
+\author{Groebner bases method used}
+
+\maketitle
+
+
+
+
+
+\section{Construction and prover internal state}
+
+
+
+
+
+\subsection*{Construction commands:}
+
+\begin{itemize}
+
+\item 
+
+Point $A$ 
+\item 
+
+Point $B$ 
+\item 
+
+Point $C$ 
+\item 
+
+Line $ab$: $A$ $B$ 
+\item 
+
+Line $bc$: $B$ $C$ 
+\item 
+
+Parallel, $p$: $A$ $bc$ 
+\item 
+
+Parallel, $q$: $C$ $ab$ 
+\item 
+
+Intersection of lines, $D$: $p$ $q$ 
+\item 
+
+Line $ac$: $A$ $C$ 
+\item 
+
+Line $bd$: $B$ $D$ 
+\item 
+
+Intersection of lines, $E$: $ac$ $bd$ 
+\end{itemize}
+
+
+
+
+
+\subsection*{Coordinates assigned to the points:}
+
+\begin{itemize}
+
+\item $A = (0, 0)$
+
+\item $B = (u_{1}, 0)$
+
+\item $C = (u_{2}, u_{3})$
+
+\item $D = (x_{2}, u_{3})$
+
+\item $E = (x_{4}, x_{3})$
+
+\end{itemize}
+
+
+
+
+
+\subsection*{Conjecture(s):}
+
+\begin{enumerate}
+
+\item Given conjecture
+
+\begin{itemize}
+
+\item \textbf{GCLC code:}
+
+
+\begin{verbatim}
+ same_length A E E C 
+\end{verbatim}
+
+\end{itemize}
+
+\begin{itemize}
+
+\item \textbf{Expression:}
+
+
+
+$AE\cong EC $\end{itemize}
+
+\end{enumerate}
+
+\hspace*{4.1mm}
+
+
+
+
+
+\section{Resolving constructed lines}
+
+\begin{itemize}
+
+\item $ab \ni A, B$ ; line is horizontal (i.e., $y(A) = y(B)$)\item $bc \ni B, C$ \item $p \ni A, D$ \item $q \ni C, D$ ; line is horizontal (i.e., $y(C) = y(D)$)\item $ac \ni A, C, E$ \item $bd \ni B, D, E$ \end{itemize}
+
+
+
+
+
+\section{Creating polynomials from hypotheses}
+
+\begin{itemize}
+
+\item 
+
+Point $A$ 
+
+
+no condition\item 
+
+Point $B$ 
+
+
+no condition\item 
+
+Point $C$ 
+
+
+no condition\item 
+
+Line $ab$: $A$ $B$ 
+\begin{itemize}
+
+\item 
+
+point $A$ is on the line ($A$, $B$)
+
+
+no condition\item 
+
+point $B$ is on the line ($A$, $B$)
+
+
+no condition\end{itemize}
+
+\item 
+
+Line $bc$: $B$ $C$ 
+\begin{itemize}
+
+\item 
+
+point $B$ is on the line ($B$, $C$)
+
+
+no condition\item 
+
+point $C$ is on the line ($B$, $C$)
+
+
+no condition\end{itemize}
+
+\item 
+
+Parallel, $p$: $A$ $bc$ 
+\begin{itemize}
+
+\item Line ($A$, $D$) parallel with line ($B$, $C$)
+
+$$
+p_{1}  =  u_{3}x_{2}+(-u_{3}u_{2}+u_{3}u_{1})
+$$
+\end{itemize}
+
+\item 
+
+Parallel, $q$: $C$ $ab$ 
+\begin{itemize}
+
+\item Line ($C$, $D$) parallel with line ($A$, $B$)
+
+ --- true by the construction
+
+\end{itemize}
+
+\item 
+
+Intersection of lines, $D$: $p$ $q$ 
+\begin{itemize}
+
+\item 
+
+point $D$ is on the line ($A$, $D$)
+
+
+no condition\item 
+
+point $D$ is on the line ($C$, $D$)
+
+
+no condition\end{itemize}
+
+\item 
+
+Line $ac$: $A$ $C$ 
+\begin{itemize}
+
+\item 
+
+point $A$ is on the line ($A$, $C$)
+
+
+no condition\item 
+
+point $C$ is on the line ($A$, $C$)
+
+
+no condition\end{itemize}
+
+\item 
+
+Line $bd$: $B$ $D$ 
+\begin{itemize}
+
+\item 
+
+point $B$ is on the line ($B$, $D$)
+
+
+no condition\item 
+
+point $D$ is on the line ($B$, $D$)
+
+
+no condition\end{itemize}
+
+\item 
+
+Intersection of lines, $E$: $ac$ $bd$ 
+\begin{itemize}
+
+\item 
+
+point $E$ is on the line ($A$, $C$)
+$$
+p_{2}  =  -u_{3}x_{4}+u_{2}x_{3}
+$$
+\item 
+
+point $E$ is on the line ($B$, $D$)
+$$
+p_{3}  =  -u_{3}x_{4}+x_{3}x_{2}-u_{1}x_{3}+u_{3}u_{1}
+$$
+\end{itemize}
+
+\end{itemize}
+
+
+
+
+
+\section{Creating polynomial from the conjecture}
+
+\begin{itemize}
+
+\item Processing given conjecture(s).
+
+\item 
+ Segment [$A$, $E$] equal size as segment [$E$, $C$]
+
+$$
+p_{4}  =  2u_{2}x_{4}+2u_{3}x_{3}+(-u_{3}^{2}-u_{2}^{2})
+$$
+\end{itemize}
+
+\begin{description}
+
+\item [Conjecture 1:] $$
+p_{5}  =  2u_{2}x_{4}+2u_{3}x_{3}+(-u_{3}^{2}-u_{2}^{2})
+$$
+\end{description}
+
+
+
+
+
+\section{Invoking the theorem prover}
+
+The used proving method is Buchberger's method.
+
+Input polynomial system is:
+
+\begin{eqnarray*}
+p_{0} &=& u_{3}x_{2}+(-u_{3}u_{2}+u_{3}u_{1})\\
+p_{1} &=& -u_{3}x_{4}+u_{2}x_{3}\\
+p_{2} &=& -u_{3}x_{4}+x_{3}x_{2}-u_{1}x_{3}+u_{3}u_{1}\\
+\end{eqnarray*}
+
+
+
+
+\subsection{Iteration 1}
+
+Current set is $S_{1} = $\begin{eqnarray*}
+p_{0} &=& u_{3}x_{2}+(-u_{3}u_{2}+u_{3}u_{1})\\
+p_{1} &=& -u_{3}x_{4}+u_{2}x_{3}\\
+p_{2} &=& -u_{3}x_{4}+x_{3}x_{2}-u_{1}x_{3}+u_{3}u_{1}\\
+\end{eqnarray*}
+\begin{enumerate}
+
+\item Creating S-polynomial from the pair $(p_{0}, p_{1}$).
+
+Skipping pair $p_{0}$ and $p_{1}$ because gcd of their leading monoms is zero.\item Creating S-polynomial from the pair $(p_{0}, p_{2}$).
+
+Skipping pair $p_{0}$ and $p_{2}$ because gcd of their leading monoms is zero.\item Creating S-polynomial from the pair $(p_{1}, p_{2}$).
+
+Forming S-pol of $p_{1}$ and $p_{2}$:$$
+p_{12}  =  u_{3}x_{3}x_{2}+(-u_{3}u_{2}-u_{3}u_{1})x_{3}+u_{3}^{2}u_{1}
+$$
+S-pol added.\end{enumerate}
+
+
+
+
+
+\subsection{Iteration 2}
+
+Current set is $S_{2} = $\begin{eqnarray*}
+p_{0} &=& u_{3}x_{2}+(-u_{3}u_{2}+u_{3}u_{1})\\
+p_{1} &=& -u_{3}x_{4}+u_{2}x_{3}\\
+p_{2} &=& -u_{3}x_{4}+x_{3}x_{2}-u_{1}x_{3}+u_{3}u_{1}\\
+p_{3} &=& -2u_{3}^{2}u_{1}x_{3}+u_{3}^{3}u_{1}\\
+\end{eqnarray*}
+\begin{enumerate}
+
+\item Creating S-polynomial from the pair $(p_{0}, p_{3}$).
+
+Skipping pair $p_{0}$ and $p_{3}$ because gcd of their leading monoms is zero.\item Creating S-polynomial from the pair $(p_{1}, p_{3}$).
+
+Skipping pair $p_{1}$ and $p_{3}$ because gcd of their leading monoms is zero.\item Creating S-polynomial from the pair $(p_{2}, p_{3}$).
+
+Skipping pair $p_{2}$ and $p_{3}$ because gcd of their leading monoms is zero.\end{enumerate}
+
+
+
+
+
+\subsection{Groebner Basis}
+
+Groebner basis has 4 polynomials:\begin{eqnarray*}
+p_{0} &=& u_{3}x_{2}+(-u_{3}u_{2}+u_{3}u_{1})\\
+p_{1} &=& -u_{3}x_{4}+u_{2}x_{3}\\
+p_{2} &=& -u_{3}x_{4}+x_{3}x_{2}-u_{1}x_{3}+u_{3}u_{1}\\
+p_{3} &=& -2u_{3}^{2}u_{1}x_{3}+u_{3}^{3}u_{1}\\
+\end{eqnarray*}
+Groebner basis succesfully computed.
+
+
+
+
+
+\section{Reducing Polynomial Conjecture}
+
+Reducing with polynomial $p_{1}$, the result is:
+
+$$
+p_{21}  =  (-2u_{3}^{2}-2u_{2}^{2})x_{3}+(u_{3}^{3}+u_{3}u_{2}^{2})
+$$
+Reducing with polynomial $p_{3}$, the result is:
+
+$$
+p_{22}  =  0
+$$
+Conclusion is reduced to zero.
+
+
+
+
+
+\section{Prover report}
+
+\begin{description}
+
+\item [Status:]  The conjecture has been proved.
+
+\item [Space Complexity:]  The biggest polynomial obtained during proof process contained 4 terms.
+
+\item [Time Complexity:]  Time spent by the prover is 0.001 seconds.There are no ndg conditions.
+
+\end{description}
+
+\end{document}

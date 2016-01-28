@@ -1,0 +1,6868 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\master diss.lyx
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Your title"
+\pdf_author "Your name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #ff0000
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptername
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thechapter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rightmark
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Enable page headers and add the chapter to the header line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Readability of algebraic proofs
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Readability-of-algebraic"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Readability-of-algebraic"
+
+\end_inset
+
+ some additional details for the readability of algebraic proofs are listed,
+ namely the full output of Wu's method (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Proofs-in-education"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Wu's-characteristic-set"
+
+\end_inset
+
+) for Desargues' theorem.
+\end_layout
+
+\begin_layout Section
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, Desargues'
+\end_layout
+
+\end_inset
+
+Desargues' theorem with Wu's method
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Desargues'-theorem-with"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+OpenGeoProver
+\end_layout
+
+\end_inset
+
+OpenGeoProver requires recompilation of 
+\family typewriter
+main/OGPConstants.java
+\family default
+ to support showing all occurring polynomials in the derivation.
+ One needs to change 
+\family typewriter
+MAX_OUTPUT_POLY_CHARS_NUM
+\family default
+ to a large enough value (the default is 2000, here 50000 will be enough).
+ Then the file 
+\family typewriter
+ogp_Chou_346.xml
+\family default
+ needs to be processed by OpenGeoProver to produce the following output.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includepdf[pages=-,nup=2x2,frame=true,noautoscale=true,scale=0.45,delta=10
+ 10]{desargues}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A similar output for the Nine point circle
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+theorem!--, nine point circle
+\end_layout
+
+\end_inset
+
+ theorem would consist of 59 pages.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+includepdf[pages=-,nup=3x3,frame=true,noautoscale=true,scale=0.3,delta=10
+ 10]{9pc}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Coq-code-for"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Coq
+\end_layout
+
+\end_inset
+
+Coq code for proving 
+\begin_inset Newline newline
+\end_inset
+
+the parallelogram theorem 
+\begin_inset Newline newline
+\end_inset
+
+in Tarski's system
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Coq code for proving the parallelogram theorem in Tarski's system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Coq-code-for"
+
+\end_inset
+
+ the full listings of the Coq (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Proofs-in-education"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Coq"
+
+\end_inset
+
+) code are shown to prove the parallelogram theorem (see Example
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "parallelogram"
+
+\end_inset
+
+ on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "parallelogram"
+
+\end_inset
+
+) in Tarski's system.
+\end_layout
+
+\begin_layout Section
+Primary definitions for chapter 7
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Preliminary-definitions-for"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[language=Coq]
+\end_layout
+
+\begin_layout Plain Layout
+
+Require Export out_lines.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Section T7.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Context `{MT:Tarski}.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac assert_cols := 
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat
+\end_layout
+
+\begin_layout Plain Layout
+
+ match goal with
+\end_layout
+
+\begin_layout Plain Layout
+
+      | H:Bet ?X1 ?X2 ?X3 |- _ => 
+\end_layout
+
+\begin_layout Plain Layout
+
+     not_exist_hyp (Col X1 X2 X3);assert (Col X1 X2 X3) by (apply bet_col;apply
+ H) 
+\end_layout
+
+\begin_layout Plain Layout
+
+ end.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac clean_trivial_hyps :=
+\end_layout
+
+\begin_layout Plain Layout
+
+  repeat 
+\end_layout
+
+\begin_layout Plain Layout
+
+  match goal with
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Cong ?X1 ?X1 ?X2 ?X2) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Cong ?X1 ?X2 ?X2 ?X1) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Cong ?X1 ?X2 ?X1 ?X2) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Bet ?X1 ?X1 ?X2) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Bet ?X2 ?X1 ?X1) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Col ?X1 ?X1 ?X2) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Col ?X2 ?X1 ?X1) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Col ?X1 ?X2 ?X1) |- _ => clear H
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac smart_subst X := subst X;clean_trivial_hyps;clean_duplicated_hyps.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac treat_equalities_aux := 
+\end_layout
+
+\begin_layout Plain Layout
+
+  match goal with
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(?X1 = ?X2) |- _ => smart_subst X2
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac treat_equalities := 
+\end_layout
+
+\begin_layout Plain Layout
+
+try treat_equalities_aux;
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat
+\end_layout
+
+\begin_layout Plain Layout
+
+  match goal with
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Cong ?X3 ?X3 ?X1 ?X2) |- _ => 
+\end_layout
+
+\begin_layout Plain Layout
+
+      apply cong_symmetry in H; apply cong_identity in H;smart_subst X2
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Cong ?X1 ?X2 ?X3 ?X3) |- _ => 
+\end_layout
+
+\begin_layout Plain Layout
+
+      apply cong_identity in H;smart_subst X2
+\end_layout
+
+\begin_layout Plain Layout
+
+   | H:(Bet ?X1 ?X2 ?X1) |- _ => apply  between_identity in H;smart_subst
+ X2
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac show_distinct X Y :=
+\end_layout
+
+\begin_layout Plain Layout
+
+ assert (X<>Y); [unfold not;intro;treat_equalities|idtac].
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve between_symmetry : Between.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve bet_col : Between.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve between_trivial between_trivial2 : Between_no_eauto.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac eBetween := treat_equalities;eauto with Between.
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac Between  := treat_equalities;auto with Between Between_no_eauto.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac prolong A B x C D :=
+\end_layout
+
+\begin_layout Plain Layout
+
+ assert (sg:= segment_construction A B C D);
+\end_layout
+
+\begin_layout Plain Layout
+
+ ex_and sg x.
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve cong_commutativity cong_reverse_identity
+\end_layout
+
+\begin_layout Plain Layout
+
+             cong_trivial_identity cong_left_commutativity
+\end_layout
+
+\begin_layout Plain Layout
+
+             cong_right_commutativity cong_transitivity cong_symmetry
+\end_layout
+
+\begin_layout Plain Layout
+
+             cong_reflexivity cong_identity : cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve cong_3_sym : Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve cong_3_swap cong_3_swap_2 cong3_transitivity : Cong3.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Unfold Cong_3 : Cong3.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve outer_transitivity_between2 between_inner_transitivity 
+\end_layout
+
+\begin_layout Plain Layout
+
+             between_exchange3 between_exchange2: Between.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve outer_transitivity_between between_exchange4.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac Cong := auto with cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac eCong := eauto with cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Resolve col_permutation_1 col_permutation_2 
+\end_layout
+
+\begin_layout Plain Layout
+
+col_permutation_3 col_permutation_4 col_permutation_5 : Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+Hint Immediate col_trivial_1 col_trivial_2 col_trivial_3: Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac Col := auto with Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+Ltac eCol := eauto with Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Definition is_midpoint := fun M A B => Bet A M B /
+\backslash
+ Cong A M M B.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definition for Lemma 7.20
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Definition-for-Lemma"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[language=Coq]
+\end_layout
+
+\begin_layout Plain Layout
+
+Lemma l7_20 : forall M A B,
+\end_layout
+
+\begin_layout Plain Layout
+
+  Col A M B -> Cong M A M B -> A=B 
+\backslash
+/ is_midpoint M A B.
+\end_layout
+
+\begin_layout Plain Layout
+
+Proof.
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+intros.
+\end_layout
+
+\begin_layout Plain Layout
+
+induction H.
+\end_layout
+
+\begin_layout Plain Layout
+
+right.
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold is_midpoint.
+\end_layout
+
+\begin_layout Plain Layout
+
+split.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+induction H.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Cong A B B B)
+\end_layout
+
+\begin_layout Plain Layout
+
+ by (apply (l4_3 A B M B B M);Between;Cong).
+\end_layout
+
+\begin_layout Plain Layout
+
+treat_equalities;auto.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Cong B A A A)
+\end_layout
+
+\begin_layout Plain Layout
+
+ by (apply (l4_3 B A M A A M);Cong;Between).
+\end_layout
+
+\begin_layout Plain Layout
+
+treat_equalities;auto.
+\end_layout
+
+\begin_layout Plain Layout
+
+Qed.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Proving Lemma 7.21
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Proving-Lemma-7.21"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[language=Coq]
+\end_layout
+
+\begin_layout Plain Layout
+
+Lemma l7_21 : forall A B C D P,
+\end_layout
+
+\begin_layout Plain Layout
+
+  ~ Col A B C -> B<>D -> Cong A B C D -> Cong B C D A ->
+\end_layout
+
+\begin_layout Plain Layout
+
+     Col A P C -> Col B P D -> is_midpoint P A C /
+\backslash
+ is_midpoint P B D.
+\end_layout
+
+\begin_layout Plain Layout
+
+Proof.
+\end_layout
+
+\begin_layout Plain Layout
+
+intros.
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (exists P', Cong_3 B D P D B P').
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l4_14.
+\end_layout
+
+\begin_layout Plain Layout
+
+Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+induction H5.
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Col D B x).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l4_13.
+\end_layout
+
+\begin_layout Plain Layout
+
+2:apply H5.
+\end_layout
+
+\begin_layout Plain Layout
+
+Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (FSC B D P A D B x C).
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold FSC.
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold Cong_3 in H5.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat split; try Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (FSC B D P C D B x A).
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold FSC.
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold Cong_3 in H5.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat split; try assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Cong P A x C).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l4_16.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply H7.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Cong P C x A).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l4_16.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply H8.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Cong_3 A P C C x A).
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold Cong_3.
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat split; try Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (Col C x A).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l4_13.
+\end_layout
+
+\begin_layout Plain Layout
+
+2:apply H11.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (P=x).
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold FSC in *.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply (l6_21 A C B D); Col.
+\end_layout
+
+\begin_layout Plain Layout
+
+subst x.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (C = A 
+\backslash
+/ is_midpoint P C A).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l7_20.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+assert (B = D 
+\backslash
+/ is_midpoint P B D).
+\end_layout
+
+\begin_layout Plain Layout
+
+eapply l7_20.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold FSC, Cong_3 in *.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+unfold is_midpoint,FSC,Cong_3 in *.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+induction H14.
+\end_layout
+
+\begin_layout Plain Layout
+
+contradiction.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+induction H13.
+\end_layout
+
+\begin_layout Plain Layout
+
+subst C.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply False_ind.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply H.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply col_trivial_3.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+repeat split; try Cong.
+\end_layout
+
+\begin_layout Plain Layout
+
+apply between_symmetry.
+\end_layout
+
+\begin_layout Plain Layout
+
+spliter.
+\end_layout
+
+\begin_layout Plain Layout
+
+assumption.
+\end_layout
+
+\begin_layout Plain Layout
+
+Qed.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Remarks-on-the"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Remarks on the Gröbner basis method
+\end_layout
+
+\end_inset
+
+Remarks 
+\begin_inset Newline newline
+\end_inset
+
+on the Gröbner basis method
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+method!--, Gröbner basis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Remarks-on-the"
+
+\end_inset
+
+ contains detailed information concerning the Gröbner basis method.
+ These details are referenced in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-in-GeoGebra"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Computing-Gröbner-bases"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-Gröbner-basis"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Equation systems for testing various CAS
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:castest-eqs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we list the non-zero sides of the reduced systems for testing the various
+ CAS in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-in-GeoGebra"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-tests"
+
+\end_inset
+
+.
+ For the geometrical explanations see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TheoremProvingPlanning"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Thales
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, Thales'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+y^{2}-a^{2}-b^{2},a^{2}+b^{2}-c^{2}-d^{2},a+x,b+y,((x-c)(a-c)+(y-d)(b-d))z-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Altitudes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(b_{1}-a_{1})(c_{1}-d_{1})+(b_{2}-a_{2})(c_{2}-d_{2}),\,(b_{1}-d_{1})(a_{1}-c_{1})+(b_{2}-d_{2})(a_{2}-c_{2}),\, z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,$
+\end_inset
+
+ 
+\begin_inset Formula $z_{2}((a_{1}-d_{1})(b_{1}-c_{1})+(a_{2}-d_{2})(b_{2}-c_{2}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Medians
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2d_{1}-b_{1}-c_{1},2d_{2}-b_{2}-c_{2},2e_{1}-a_{1}-c_{1},2e_{2}-a_{2}-c_{2},2f_{1}-a_{1}-b_{1},2f_{2}-a_{2}-b_{2},$
+\end_inset
+
+
+\begin_inset Formula $g_{1}d_{2}+a_{1}(g_{2}-d_{2})-d_{1}g_{2}-a_{2}(g_{1}-d_{1}),g_{1}e_{2}+b_{1}(g_{2}-e_{2})-e_{1}g_{2}-b_{2}(g_{1}-e_{1}),$
+\end_inset
+
+
+\begin_inset Formula $z(g_{1}f_{2}+c_{1}(g_{2}-f_{2})-f_{1}g_{2}-c_{2}(g_{1}-f_{1}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Bisectors
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2d_{1}-b_{1}-c_{1},2d_{2}-b_{2}-c_{2},2e_{1}-a_{1}-c_{1},2e_{2}-a_{2}-c_{2},2f_{1}-a_{1}-b_{1},$
+\end_inset
+
+
+\begin_inset Formula $2f_{2}-a_{2}-b_{2},(d_{1}-g_{1})(b_{1}-c_{1})+(d_{2}-g_{2})(b_{2}-c_{2}),$
+\end_inset
+
+
+\begin_inset Formula $(e_{1}-g_{1})(c_{1}-a_{1})+(e_{2}-g_{2})(c_{2}-a_{2}),z((f_{1}-g_{1})(a_{1}-b_{1})+(f_{2}-g_{2})(a_{2}-b_{2}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Euler
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+line!--, Euler's
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2d_{1}-b_{1}-c_{1},2d_{2}-b_{2}-c_{2},2e_{1}-a_{1}-c_{1},2e_{2}-a_{2}-c_{2},2f_{1}-a_{1}-b_{1},2f_{2}-a_{2}-b_{2},$
+\end_inset
+
+
+\begin_inset Formula $(d_{1}-o_{1})(b_{1}-c_{1})+(d_{2}-o_{2})(b_{2}-c_{2}),(e_{1}-o_{1})(c_{1}-a_{1})+(e_{2}-o_{2})(c_{2}-a_{2}),$
+\end_inset
+
+
+\begin_inset Formula $s_{1}d_{2}+a_{1}(s_{2}-d_{2})-d_{1}s_{2}-a_{2}(s_{1}-d_{1}),s_{1}e_{2}+b_{1}(s_{2}-e_{2})-e_{1}s_{2}-b_{2}(s_{1}-e_{1}),$
+\end_inset
+
+
+\begin_inset Formula $(a_{1}-m_{1})(b_{1}-c_{1})+(a_{2}-m_{2})(b_{2}-c_{2}),(b_{1}-m_{1})(c_{1}-a_{1})+(b_{2}-m_{2})(c_{2}-a_{2}),$
+\end_inset
+
+
+\begin_inset Formula $z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,z_{2}(s_{1}m_{2}+o_{1}(s_{2}-m_{2})-m_{1}s_{2}-o_{2}(s_{1}-m_{1}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Nine
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, nine point circle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2d_{1}-b_{1}-c_{1},2d_{2}-b_{2}-c_{2},2e_{1}-a_{1}-c_{1},2e_{2}-a_{2}-c_{2},2f_{1}-a_{1}-b_{1},2f_{2}-a_{2}-b_{2},$
+\end_inset
+
+
+\begin_inset Formula $(a_{1}-g_{1})(b_{1}-c_{1})+(a_{2}-g_{2})(b_{2}-c_{2}),b_{1}c_{2}+g_{1}(b_{2}-c_{2})-c_{1}b_{2}-g_{2}(b_{1}-c_{1}),$
+\end_inset
+
+
+\begin_inset Formula $d_{1}^{2}+d_{2}^{2}-e_{1}^{2}-e_{2}^{2},f_{1}^{2}+f_{2}^{2}-e_{1}^{2}-e_{2}^{2},$
+\end_inset
+
+
+\begin_inset Formula $z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,z_{2}(g_{1}^{2}+g_{2}^{2}-f_{1}^{2}-f_{2}^{2})-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Angle
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, angle bisector
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{1}d_{2}+a_{1}(b_{2}-d_{2})-d_{1}b_{2}-a_{2}(b_{1}-d_{1}),$
+\end_inset
+
+
+\begin_inset Formula $((b_{1}-c_{1})(c_{1}-d_{1})+(b_{2}-c_{2})(c_{2}-d_{2}))^{2}((a_{1}-c_{1})^{2}+(a_{2}-c_{2})^{2})-((a_{1}-c_{1})(c_{1}-d_{1})+(a_{2}-c_{2})(c_{2}-d_{2}))^{2}((b_{1}-c_{1})^{2}+(b_{2}-c_{2})^{2}),$
+\end_inset
+
+
+\begin_inset Formula $z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,$
+\end_inset
+
+
+\begin_inset Formula $z_{2}(((b_{1}-c_{1})^{2}+(b_{2}-c_{2})^{2})((a_{1}-d_{1})^{2}+(a_{2}-d_{2})^{2})-((a_{1}-c_{1})^{2}+(a_{2}-c_{2})^{2})((b_{1}-d_{1})^{2}+(b_{2}-d_{2})^{2}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Simson
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+line!--, Simson
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{1}a_{1}+a_{2}a_{2}-b_{1}b_{1}-b_{2}b_{2},b_{1}b_{1}+b_{2}b_{2}-c_{1}c_{1}-c_{2}c_{2},c_{1}c_{1}+c_{2}c_{2}-d_{1}d_{1}-d_{2}d_{2},$
+\end_inset
+
+
+\begin_inset Formula $d_{1}d_{1}+d_{2}d_{2}-p_{1}p_{1}-p_{2}p_{2},(p_{1}-d_{1})(b_{1}-c_{1})+(p_{2}-d_{2})(b_{2}-c_{2}),$
+\end_inset
+
+
+\begin_inset Formula $c_{1}d_{2}+b_{1}(c_{2}-d_{2})-d_{1}c_{2}-b_{2}(c_{1}-d_{1}),(p_{1}-e_{1})(c_{1}-a_{1})+(p_{2}-e_{2})(c_{2}-a_{2}),$
+\end_inset
+
+
+\begin_inset Formula $a_{1}e_{2}+c_{1}(a_{2}-e_{2})-e_{1}a_{2}-c_{2}(a_{1}-e_{1}),(p_{1}-f_{1})(a_{1}-b_{1})+(p_{2}-f_{2})(a_{2}-b_{2}),$
+\end_inset
+
+
+\begin_inset Formula $b_{1}f_{2}+a_{1}(b_{2}-f_{2})-f_{1}b_{2}-a_{2}(b_{1}-f_{1}),z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,$
+\end_inset
+
+
+\begin_inset Formula $z_{2}(e_{1}f_{2}+d_{1}(e_{2}-f_{2})-f_{1}e_{2}-d_{2}(e_{1}-f_{1}))-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pappus
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, Pappus' hexagon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{1}(b_{2}-c_{2})+a_{2}(-b_{1}+c_{1})+b_{1}c_{2}-b_{2}c_{1},d_{1}(e_{2}-f_{2})+d_{2}(-e_{1}+f_{1})+e_{1}f_{2}-e_{2}f_{1},$
+\end_inset
+
+
+\begin_inset Formula $a_{1}(-e_{2}+h_{2})+a_{2}(e_{1}-h_{1})-e_{1}h_{2}+e_{2}h_{1},b_{1}(d_{2}-h_{2})+b_{2}(-d_{1}+h_{1})+d_{1}h_{2}-d_{2}h_{1},$
+\end_inset
+
+
+\begin_inset Formula $c_{1}(d_{2}-i_{2})+c_{2}(-d_{1}+i_{1})+d_{1}i_{2}-d_{2}i_{1},a_{1}(-f_{2}+i_{2})+a_{2}(f_{1}-i_{1})-f_{1}i_{2}+f_{2}i_{1},$
+\end_inset
+
+
+\begin_inset Formula $c_{1}(e_{2}-j_{2})+c_{2}(-e_{1}+j_{1})+e_{1}j_{2}-e_{2}j_{1},b_{1}(-f_{2}+j_{2})+b_{2}(f_{1}-j_{1})-f_{1}j_{2}+f_{2}j_{1},$
+\end_inset
+
+
+\begin_inset Formula $a_{1}(b_{2}z_{2}-d_{2}z_{2})+a_{2}(-b_{1}z_{2}+d_{1}z_{2})+b_{1}d_{2}z_{2}-b_{2}d_{1}z_{2}-1,$
+\end_inset
+
+
+\begin_inset Formula $a_{1}(b_{2}z_{3}-e_{2}z_{3})+a_{2}(-b_{1}z_{3}+e_{1}z_{3})+b_{1}e_{2}z_{3}-b_{2}e_{1}z_{3}-1,$
+\end_inset
+
+
+\begin_inset Formula $h_{1}(i_{2}z_{1}-j_{2}z_{1})+h_{2}(-i_{1}z_{1}+j_{1}z_{1})+i_{1}j_{2}z_{1}-i_{2}j_{1}z_{1}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Simson-R
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+line!--, Simson
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{1}a_{1}+a_{2}a_{2}-b_{1}b_{1}-b_{2}b_{2},b_{1}b_{1}+b_{2}b_{2}-c_{1}c_{1}-c_{2}c_{2},c_{1}c_{1}+c_{2}c_{2}-d_{1}d_{1}-d_{2}d_{2},d_{1}d_{1}+d_{2}d_{2}-p_{1}p_{1}-p_{2}p_{2},(p_{1}-d_{1})(b_{1}-c_{1})+(p_{2}-d_{2})(b_{2}-c_{2}),$
+\end_inset
+
+
+\begin_inset Formula $c_{1}d_{2}+b_{1}(c_{2}-d_{2})-d_{1}c_{2}-b_{2}(c_{1}-d_{1}),(p_{1}-e_{1})(c_{1}-a_{1})+(p_{2}-e_{2})(c_{2}-a_{2}),a_{1}e_{2}+c_{1}(a_{2}-e_{2})-e_{1}a_{2}-c_{2}(a_{1}-e_{1}),$
+\end_inset
+
+
+\begin_inset Formula $(p_{1}-f_{1})(a_{1}-b_{1})+(p_{2}-f_{2})(a_{2}-b_{2}),b_{1}f_{2}+a_{1}(b_{2}-f_{2})-f_{1}b_{2}-a_{2}(b_{1}-f_{1}),$
+\end_inset
+
+ 
+\begin_inset Formula $z_{1}(b_{1}c_{2}+a_{1}(b_{2}-c_{2})-c_{1}b_{2}-a_{2}(b_{1}-c_{1}))-1,z_{2}(e_{1}f_{2}+d_{1}(e_{2}-f_{2})-f_{1}e_{2}-d_{2}(e_{1}-f_{1}))-1,a_{1},a_{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pappus-R
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, Pappus' hexagon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{1}(b_{2}-c_{2})+a_{2}(-b_{1}+c_{1})+b_{1}c_{2}-b_{2}c_{1},d_{1}(e_{2}-f_{2})+d_{2}(-e_{1}+f_{1})+e_{1}f_{2}-e_{2}f_{1},$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}(-e_{2}+h_{2})+a_{2}(e_{1}-h_{1})-e_{1}h_{2}+e_{2}h_{1},b_{1}(d_{2}-h_{2})+b_{2}(-d_{1}+h_{1})+d_{1}h_{2}-d_{2}h_{1},$
+\end_inset
+
+
+\begin_inset Formula $c_{1}(d_{2}-i_{2})+c_{2}(-d_{1}+i_{1})+d_{1}i_{2}-d_{2}i_{1},a_{1}(-f_{2}+i_{2})+a_{2}(f_{1}-i_{1})-f_{1}i_{2}+f_{2}i_{1},$
+\end_inset
+
+
+\begin_inset Formula $c_{1}(e_{2}-j_{2})+c_{2}(-e_{1}+j_{1})+e_{1}j_{2}-e_{2}j_{1},b_{1}(-f_{2}+j_{2})+b_{2}(f_{1}-j_{1})-f_{1}j_{2}+f_{2}j_{1},$
+\end_inset
+
+
+\begin_inset Formula $a_{1}(b_{2}z_{2}-d_{2}z_{2})+a_{2}(-b_{1}z_{2}+d_{1}z_{2})+b_{1}d_{2}z_{2}-b_{2}d_{1}z_{2}-1,$
+\end_inset
+
+
+\begin_inset Formula $a_{1}(b_{2}z_{3}-e_{2}z_{3})+a_{2}(-b_{1}z_{3}+e_{1}z_{3})+b_{1}e_{2}z_{3}-b_{2}e_{1}z_{3}-1,h_{1}(i_{2}z_{1}-j_{2}z_{1})+h_{2}(-i_{1}z_{1}+j_{1}z_{1})+i_{1}j_{2}z_{1}-i_{2}j_{1}z_{1}-1,a_{1},a_{2},b_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Buchberger algorithm
+\end_layout
+
+\begin_layout Section
+Equation systems after elimination
+\end_layout
+
+\begin_layout Subsection
+Giac code to mimic Singular output
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Complete-Giac-code"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Giac
+\end_layout
+
+\end_inset
+
+Giac code will compute the same output as generated in Singular for getting
+ the factorized form of the eliminated equation system.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+[[aa:=eliminate([
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ v7*v6+-1*v8*v5,v8*v6+v7*v5+-1*v6*v4+-1*v5*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ -1*v9*v4+v10*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ -1*v10*v4+v6*v4+-1*v9*v3+v5*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ v11*v8+-1*v12*v7+-1*v11*v4+v7*v4+v12*v3+-1*v8*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ v11*v10+-1*v12*v9+-1*v11*v6+v9*v6+v12*v5+-1*v10*v5,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ -1*v13*v6+v14*v5+v13*v4+-1*v5*v4+-1*v14*v3+v6*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ -1*v14*v6+-1*v13*v5+v14*v4+v13*v3,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ v15*v14+-1*v16*v13,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ v15*v10+-1*v16*v9+-1*v15*v6+v9*v6+v16*v5+-1*v10*v5,
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ -1+-1*v17*v15+v17*v11],
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ [v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17])],
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+[bb:=size(aa)],
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+[for ii from 0 to bb-1 do 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print("[" + (ii+1) + "]:");
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print(" [1]:");
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print("  _[1]=1");
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ cc:=factors(aa[ii]);
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ dd:=size(cc);
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ for jj from 0 to dd-1 by 2 do
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  print("  _[" + (jj/2+2) + "]=" + (cc[jj]));
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  od;
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print(" [2]:");
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print("  " + cc[1]);
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ for kk from 1 to dd-1 by 2 do
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  print("   ," + cc[kk]);
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  od;
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ od],
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+0][3]
+\end_layout
+
+\begin_layout Subsection
+The Buchberger algorithm
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+algorithm!--, Buchberger
+\end_layout
+
+\end_inset
+
+ in Singular
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:The-Buchberger-algorithm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{lindemo.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Freedom of choice in the Buchberger algorithm
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Freedom-of-choice"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+algorithm!--, Buchberger
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section first we change the 
+\begin_inset Formula $red$
+\end_inset
+
+ operation to select the last possible polynomial when computing the reduction
+ chains.
+ We use Example
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ex:lindemo"
+
+\end_inset
+
+ again.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "lindemo-l1-mini.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When eliminating leading terms of (1) and (4), the reductors here are (4),
+ (5), (3), (4), (5), (4) and (5)---formerly they were (4), (1), (1), (4),
+ (4), (4); therefore the reduction chains can be different when different
+ polynomial selection strategies are used.
+ The output Gröbner basis is, however, the same (at least in this example).
+\end_layout
+
+\begin_layout Standard
+On the other hand, by changing the polynomial selection algorithm in the
+ Buchberger algorithm, also the Gröbner basis may change.
+ We will change the algorithm to use the last set of the 2-element sets.
+ In Singular we implemented sets by using lists, so that technically it
+ means that we use the last element of a continuously appended list.
+ (We changed the red operation algorithm back to its original setting.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "lindemo-1l-mini.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now three new equations were produced, and only the last one is the same
+ as in the previous outputs.
+ Surprisingly a quadratic equation has also been introduced.
+\end_layout
+
+\begin_layout Subsection
+Uniqueness of a minimal--reduced--normed Gröbner basis
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Uniqueness-of-a"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+Gröbner basis!--, minimal--reduced--normed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we continue the last example of the previous section as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "lindemo-1l-minired-mini.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The used source code is the same as before, but the following extra subroutines
+ need to be defined with the extended version of the main program:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "lindemo-minired.txt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Euler's line
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Different-equation-systems"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+line!--, Euler's
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we show all the 24 possible equation systems for Euler's line.
+\end_layout
+
+\begin_layout Standard
+We may create a couple of basic Unix shell scripts to rearrange the variable
+ ordering in an existing Singular script.
+ Basically, a fast permutor can be used after putting the permutable free
+ variables into line 2 in the 
+\begin_inset Quotes eld
+\end_inset
+
+input
+\begin_inset Quotes erd
+\end_inset
+
+ file:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# Some parts of the following code was taken from
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+# http://stackoverflow.com/a/3846321.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+perm() {
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  local items="$1"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  local out="$2"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  local i
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  [[ "$items" == "" ]] && echo "$out" && return
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  for (( i=0; i<${#items}; i++ )) ; do
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+    perm "${items:0:i}${items:i+1}" "$out${items:i:1}"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+    done
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  }
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+CASE=1
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+perm 3456 | sed s/"
+\backslash
+([0-9]
+\backslash
+)"/"v
+\backslash
+
+\backslash
+1,"/g | while read PERM; do
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ INPUT=input-$PERM
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ OUTPUT=output-$PERM
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ test -r $OUTPUT || {
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  echo "Generating $OUTPUT...
+ (case $CASE)"
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  head -1 input >> $OUTPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  $PERM" > $INPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  tail -n +3 input >> $INPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  cat $INPUT | Singular > $OUTPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  rm $INPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  }
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ CASE=$((CASE+1))
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ done
+\end_layout
+
+\begin_layout Standard
+The following AWK script helps to rewrite the Singular output to show different
+ equations on different lines, but different factors of the same equation
+ should be shown on the same line:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+{
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+if (substr($0,4,3)=="[2]")
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ print "";
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+else if (substr($0,1,7)=="      _" && substr($0,9,2)!="1]")
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  printf("(%s)", substr($0,12));
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+}
+\end_layout
+
+\begin_layout Standard
+Finally, this loop iterates on the generated output files to get the final
+ report:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+find -name 'output-*' | while read FILENAME; do
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ LENGTH=`cat $FILENAME | grep "^
+\backslash
+[" | tail -1 |
+\backslash
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+  sed s/:// | sed s/"
+\backslash
+["// | sed s/"
+\backslash
+]"//`
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ NAME=`echo $FILENAME | sed s/",$"/""/`
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ echo "--- $NAME ($LENGTH eqs) ---" >> $OUTPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ cat $FILENAME | ./rewrite >> $OUTPUT
+\end_layout
+
+\begin_layout LyX-Code
+
+\size footnotesize
+ done
+\end_layout
+
+\begin_layout Standard
+The output is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols*}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v5,v6,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v5-v5^2-v6^2+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v3*v5-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v6,v3,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2-v6^2+v5*v3+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v3+v3^2-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v3,v6,v5 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v6-v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4^2-v3^2+v4*v6+v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4)(-v4*v6+v6^2-v3*v5+v5^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4^2*v6^2+v4*v6^3+v3^2*v5^2-v3*v5^3)
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v5,v4,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2-v5^2+v6*v4+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^3*v4-v6^2*v4^2-v5^3*v3+v5^2*v3^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v4,v5,v6 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v5-v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3^2-v4^2+v3*v5+v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3)(-v3*v5+v5^2-v4*v6+v6^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v4,v6,v5 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v6-v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3^2-v4^2+v4*v6+v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4)(-v4*v6+v6^2-v3*v5+v5^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4-v6)(v4)(v6^2+v5^2)
+\end_layout
+
+\begin_layout LyX-Code
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v6,v5,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v6-v6^2-v5^2+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4^2*v6^2+v4*v6^3-v5^3*v3+v5^2*v3^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v3,v4,v5 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v6*v4+v4^2-v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2+v6*v4+v3*v5-v5^2)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v4)(v6^2+v5^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v5,v3,v6 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2-v5*v3+v3^2-v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2+v5*v3+v4*v6-v6^2)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v3)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v3,v5,v6 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v5-v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4^2-v3^2+v3*v5+v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3)(-v3*v5+v5^2-v4*v6+v6^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v6,v4,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2-v6^2+v6*v4+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v4+v4^2-v5*v3+v3^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v3,v5,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2+v3*v5-v5^2+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v3*v5-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v4,v3,v6 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2-v5*v3+v3^2-v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2+v5*v3+v4*v6-v6^2)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v3)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v4,v5,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2+v6*v4-v5^2+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^3*v4-v6^2*v4^2-v5^3*v3+v5^2*v3^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v6,v5,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2+v3*v5-v5^2+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v3*v5-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v3,v6,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2+v5*v3-v6^2+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v3+v3^2-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v5,v4,v6 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5*v4-v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v3*v5+v4^2-v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3)(v3*v5-v5^2+v4*v6-v6^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v5,v6,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2+v4*v6-v6^2+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2-v4*v6-v5*v3+v3^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v6,v3,v5 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2-v4*v6+v3^2-v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4)(v4*v6-v6^2+v3*v5-v5^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4^2*v6^2+v4*v6^3+v3^2*v5^2-v3*v5^3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v5,v3,v4 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v5*v4)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2-v5^2+v5*v3+v6*v4)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^2+v5^2)(-v6+v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v3+v3^2-v6*v4+v4^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v3,v4,v6 (6 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5*v4-v3*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v3*v6)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v3+v3^2+v4^2-v4*v6)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3)(-v5^2+v5*v3+v4*v6-v6^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v3)(v3)(v5^2+v6^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4-v6)(v3^2+v4^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v5,v4,v6,v3 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2+v4*v6-v6^2+v5*v3)(v3)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2+v6^2)(-v5+v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2-v4*v6-v5*v3+v3^2)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v4,v3,v5 (6 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v3+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v4+v4^2+v3^2-v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4)(-v6^2+v6*v4+v3*v5-v5^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6^3*v4-v6^2*v4^2+v3^2*v5^2-v3*v5^3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(v4^2+v3^2)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v6,v4,v5 (5 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v4*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v4*v5)(v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2-v6*v4+v4^2-v3*v5)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6^2+v6*v4+v3*v5-v5^2)(v4)(v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v4)(v6^2+v5^2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pappus' hexagon theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Different-equation-systems-1"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+theorem!--, Pappus' hexagon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following table shows the number of equations among the 40320 possible
+ equation sets:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size scriptsize
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="16">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+230
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+623
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+985
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1648
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8168
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11995
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5973
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3344
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+459
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+274
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1124
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+262
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we provide example sets for each number of equations.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v5,v9,v11,v6,v4,v8,v7 (10 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v11)(v6-v4)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v5)(v9-v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v11)(v6-v4)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v11)(-v3*v8+v5*v8-v6*v7+v4*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(-v5*v8+v6*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v5*v8+v3*v9*v8+v3*v6*v7-v9*v4*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(v11)(v4-v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v11*v6-v5*v11*v4-v5^2*v8+v3*v9*v8-v3*v11*v8+v5*v11*v8+v5*v6*v7-
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ v11*v6*v7-v9*v4*v7+v11*v4*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v7)(-v5+v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v7)(-v5+v9)(-v9+v11)(v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v7,v3,v5,v6,v4,v9,v11,v8 (11 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v9-v11)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v5)(v9-v11)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4-v8)(-v5+v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v6-v5*v4)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7+v3)(v5-v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v6*v9+v7*v4*v9+v7*v6*v11-v3*v6*v11-v7*v4*v11+v5*v4*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v3*v9*v8+v5*v9*v8+v3*v11*v8-v5*v11*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v3*v9+v7*v5*v9+v7*v3*v11-v3*v5*v11-v7*v9*v11+v3*v9*v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v5*v6+v7*v4*v9+v7*v6*v11-v3*v6*v11-v7*v4*v11+v5*v4*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v5^2*v8-v3*v9*v8+v3*v11*v8-v5*v11*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v3*v6+v7*v4*v9+v3*v5*v8-v3*v9*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v5*v4*v9-v7*v4*v9^2-v5^2*v9*v8+v5*v9^2*v8-v3*v5*v11*v8
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v5^2*v11*v8+v3*v11^2*v8-v5*v11^2*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3)(-v3+v5)(-v5+v9)(v9-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v8,v3,v5,v6,v9,v11,v7 (12 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v5)(v9-v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v9-v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v7)(-v5+v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v11+v3*v6*v11-v4*v9*v11+v8*v9*v11+v4*v9*v7-v6*v9*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v11*v7+v6*v11*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v5-v3*v6)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v3*v9-v8*v5*v9-v8*v3*v11-v4*v5*v11+v8*v5*v11+v3*v6*v11-v4*v9*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v9*v7+v4*v11*v7-v6*v11*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v4+v6)(v9-v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v5^2-v8*v3*v9+v8*v3*v11+v4*v5*v11-v8*v5*v11-v3*v6*v11-v5*v6*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v4*v9*v7-v4*v11*v7+v6*v11*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v3*v5+v8*v3*v9+v3*v6*v7-v4*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3^2*v6-v4*v3*v9-v3*v6*v7+v6*v9*v7+v4*v11*v7-v6*v11*v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v3*v6-v8*v3*v6-v4^2*v9+v8*v6*v9+v4*v8*v11-v8*v6*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v7)(-v5+v9)(-v9+v11)(v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v5,v8,v9,v11,v6,v7,v4 (13 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v11)(v6-v4)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v5)(v9-v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v3*v6-v5*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v9+v11)(v6-v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v8*v11+v8*v9*v11-v9*v6*v7+v11*v6*v7+v5*v11*v4-v9*v11*v4
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v9*v7*v4-v11*v7*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v7)(-v5+v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v8*v9+v5*v8*v9+v3*v8*v11-v5*v8*v11-v3*v11*v6-v9*v6*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v11*v6*v7+v5*v11*v4+v9*v7*v4-v11*v7*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5^2*v8+v3*v8*v9-v3*v8*v11+v5*v8*v11+v3*v11*v6+v5*v6*v7-v11*v6*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v5*v11*v4-v9*v7*v4+v11*v7*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v5*v8+v3*v8*v9+v3*v6*v7-v9*v7*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v6*v7+v11*v6*v7+v5^2*v4-v5*v9*v4+v9*v7*v4-v11*v7*v4)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(-v9+v11)(v11)(v6-v4)(v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(v9-v11)(-v5+v7)(v4)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v7)(-v5+v9)(-v9+v11)(v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v9,v7,v5,v11,v6,v3,v4,v8 (14 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v11)(v6-v4)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v3)(-v9+v11)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v5)(v11)(v4-v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v6*v3-v5*v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v6*v3+v9*v7*v4-v9*v3*v8+v5*v3*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v5*v6+v7*v11*v6-v11*v6*v3+v9*v7*v4-v7*v11*v4+v5*v11*v4
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v5^2*v8-v5*v11*v8-v9*v3*v8+v11*v3*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9*v7*v6+v7*v11*v6-v11*v6*v3+v9*v7*v4-v7*v11*v4+v5*v11*v4
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v9*v5*v8-v5*v11*v8-v9*v3*v8+v11*v3*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7-v3)(-v9+v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v5-v3)(-v9+v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9^2+v5*v11+v9*v3-v11*v3)(-v7*v4+v3*v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v3)(-v7*v5+v7*v11-v9*v3+v5*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v11)(v11)(-v6+v4)(v4-v8)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v11)(v11)(-v5+v3)(v4-v8)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v5)(v5-v3)(-v9+v11)(v11)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v4,v7,v11,v9,v8,v3,v5 (15 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11+v9)(v8)(v3-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v11+v9)(v3-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v6*v3-v4*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v11-v9)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v9-v5)(-v7+v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v9-v5)(-v4+v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v7*v9+v6*v7*v3+v9*v8*v3-v8*v3*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v6*v7+v8*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v7*v11-v4*v7*v11+v6*v7*v3-v6*v11*v3+v11*v8*v3-v6*v7*v5
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v4*v11*v5-v11*v8*v5-v8*v3*v5+v8*v5^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9)(v8)(v6*v3-v4*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v7*v9+v11*v3)(v3-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v7+v8*v5)(v6*v3-v4*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(-v11+v9)(v9-v5)(v3-v5)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(v9)(-v4+v8)(v8)(v3-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v4-v8)(v9)(-v9+v5)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v4,v7,v11,v9,v8,v5,v3 (16 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11+v9)(v8)(v5-v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v11+v9)(v5-v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v4*v5-v6*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v11-v9)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v11*v9+v7*v9*v5+v7*v11*v3-v7*v9*v3+v11*v9*v3-v11*v5*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v11*v9-v11*v9*v8+v9*v8*v5-v6*v11*v3+v11*v8*v3-v9*v8*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v7*v9-v6*v7*v3-v9*v8*v3+v8*v5*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v6*v7+v8*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v7*v11-v4*v7*v11-v6*v7*v5+v4*v11*v5-v11*v8*v5+v8*v5^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v7*v3-v6*v11*v3+v11*v8*v3-v8*v5*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9^2*v8*v5+v9*v8*v5^2+v6*v11*v9*v3-v11*v9*v8*v3+v9^2*v8*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v6*v11*v5*v3+v11*v8*v3^2-v9*v8*v3^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9)(v8)(v4*v5-v6*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v9-v11*v3)(-v9+v5)(v5-v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v7+v8*v5)(-v4*v5+v6*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(-v11+v9)(-v9+v5)(v5-v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(-v11+v9)(-v6*v9+v9*v8+v6*v5-v8*v3)(v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9)(v6*v4*v9-v4^2*v9-v6*v9*v8+v4*v9*v8+v6*v8*v5-v6^2*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v4*v3-v6*v8*v3)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v7,v4,v6,v9,v3,v8,v11,v5 (17 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v4+v8)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v7+v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(v8)(-v9+v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v9-v11)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v3-v5)(-v9+v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v6*v3-v7*v4*v11+v7*v6*v11-v6*v3*v11+v3*v8*v11-v7*v6*v5
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v3*v8*v5+v4*v11*v5-v8*v11*v5+v8*v5^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v7*v6+v8*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v4*v9+v7*v6*v3+v9*v3*v8-v3*v8*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v4+v7*v6+v3*v8-v8*v5)(v11-v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v6*v9-v9*v8+v4*v11-v6*v11-v4*v5+v8*v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(-v9*v3+v7*v11-v7*v5+v3*v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(-v7*v6+v8*v5)(v11-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v5)(-v4+v8)(v8)(v11-v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7+v3)(v3-v5)(v8)(v11-v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(-v4+v8)(v8)(-v11+v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v7+v3)(v3-v5)(v11-v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v3,v8,v6,v4,v7,v5,v11,v9 (18 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8+v4)(v5-v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v7)(v5-v9)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v7)(v11-v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v3+v5)(v11-v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v6+v4)(v11-v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6+v4*v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3*v8*v11-v3*v6*v11+v6*v7*v11-v4*v7*v11-v8*v5*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v4*v5*v11-v3*v8*v9-v6*v7*v9+v4*v7*v9+v8*v5*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v7*v5+v8*v5^2+v3*v8*v11-v3*v6*v11+v6*v7*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v7*v11-v8*v5*v11+v4*v5*v11-v3*v8*v9+v4*v7*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v6*v7+v3*v8*v5-v3*v8*v9+v4*v7*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3*v8+v4*v7)(v5-v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v3*v6+v4*v5)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v5-v9)(-v7*v11+v5*v11+v3*v9-v5*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v9)(-v4*v7*v11+v4*v5*v11+v4*v7*v9-v8*v5*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v5-v9)(v4*v11-v8*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8+v4)(-v4*v7+v8*v5)(v5-v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v3*v4+v4*v7-v8*v5+v4*v5)(v5-v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v3+v7)(v7)(-v3+v5)(v5-v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v8+v4)(-v6+v4)(v5-v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v7,v8,v6,v4,v9,v3,v5,v11 (19 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8+v4)(v9-v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v5)(-v7+v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v9-v11)(-v3+v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v9-v11)(-v3+v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v6*v3+v7*v6*v5+v8*v3*v5-v8*v5^2-v7*v6*v11+v7*v4*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v3*v11+v6*v3*v11+v8*v5*v11-v4*v5*v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v4*v9+v7*v6*v3+v8*v9*v3-v8*v3*v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v6+v4)(v9-v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v6-v8*v5)(v9-v5)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v6+v7*v4-v8*v3+v8*v5)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9*v3-v7*v5+v3*v5+v7*v11)(-v3+v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v9-v8*v5+v4*v5+v8*v11)(-v3+v5)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(-v4*v9-v8*v5+v4*v5+v8*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v6-v8*v5)(-v6+v4)(-v5+v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v4+v8*v3)(-v3+v5)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v8+v4)(-v3+v5)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v7+v3)(-v3+v5)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v7+v3)(-v3+v5)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v8+v4)(-v6+v4)(v5-v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v9,v5,v8,v4,v6,v11,v3,v7 (20 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v11)(-v4+v6)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v3)(-v9+v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9+v5)(v11)(v3-v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9*v8*v3-v5*v8*v3-v9*v4*v7+v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v4+v6*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9*v8*v11-v5*v8*v11-v9*v4*v11+v6*v11*v3+v9*v4*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v9*v6*v7-v4*v11*v7+v6*v11*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v11)(v8)(-v4+v6)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5^2*v8-v5*v8*v11+v5*v4*v11-v5*v8*v3+v8*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v6*v11*v3-v5*v6*v7-v4*v11*v7+v6*v11*v7+v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v9*v5*v8+v5*v8*v11-v5*v4*v11+v5*v8*v3-v8*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v11*v3+v9*v6*v7+v4*v11*v7-v6*v11*v7-v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4-v6)(-v5*v8*v3+v8*v11*v3-v4*v11*v7+v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9*v4^2-v5*v8*v6-v9*v4*v6-v8*v4*v11+v8*v6*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v6*v3-v4*v6*v3+v6^2*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(-v5*v6-v4*v11+v6*v11+v6*v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v11)(v11)(-v5+v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v8*v6-v8*v4*v11+v4^2*v11+v8*v6*v11-v4*v6*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v6*v3-v4*v6*v3+v6^2*v3)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v5*v8*v6*v3+v8*v4*v11*v3-v8*v6*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v6*v3^2-v4^2*v11*v7+v4*v6*v11*v7+v4*v6*v3*v7-v6^2*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v5*v8*v6-v8*v4*v11+v4^2*v11+v8*v6*v11-v4*v6*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v6*v3-v4*v6*v3+v6^2*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v11)(-v4*v11+v6*v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8-v4)(-v4+v6)(v11)(-v4*v11+v6*v3)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v11)(-v4*v11+v6*v3)(-v8*v3+v4*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8-v4)(v8)(-v4+v6)(v11)(-v4*v11+v6*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v11,v4,v6,v8,v5,v3,v9,v7 (21 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11-v9)(-v5+v3)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11-v9)(-v4+v6)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v3+v8*v3*v9+v6*v3*v7-v4*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11*v5*v3+v11*v3*v9+v11*v3*v7-v11*v9*v7+v5*v9*v7-v3*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11*v6*v3+v11*v8*v3+v11*v4*v9-v11*v8*v9+v8*v5*v9-v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(-v8*v5+v6*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5+v8*v3-v4*v7+v6*v7)(-v11+v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11*v4*v5-v11*v8*v5+v8*v5^2-v11*v6*v3+v11*v8*v3-v8*v3*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v11*v4*v7+v11*v6*v7-v6*v5*v7+v4*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11-v9)(-v4+v6)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v5-v6*v3)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v7)(-v11*v3+v11*v9-v5*v9+v3*v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v4*v5-v6*v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11*v8*v3^2+v11*v8*v3*v9+v8*v3^2*v9-v8*v3*v9^2+v11*v8*v3*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v11*v8*v9*v7+v8*v5*v9*v7-v6*v3*v9*v7-v8*v3*v9*v7+v4*v9^2*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v3)(v3-v7)(-v5+v9)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v3-v7)(-v6*v5+v6*v3-v4*v9+v6*v9)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v8*v5-v4*v6*v3+v6^2*v3+v6*v8*v3+v4^2*v9-v4*v6*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v8*v9+v6*v8*v9)(v7)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v9)(-v8*v3+v4*v7)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v6*v8*v5-v4*v6*v3+v6^2*v3+v6*v8*v3+v4^2*v9-v4*v6*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v8*v9+v6*v8*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v3-v7)(-v6*v3+v4*v9)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(-v4+v8)(-v6*v3+v4*v9)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(-v4+v8)(v8)(-v6*v3+v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v7,v8,v5,v11,v6,v4,v3,v9 (22 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v11*v3+v11*v6*v3-v8*v5*v9+v8*v11*v9-v11*v4*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v11*v3+v5*v11*v3-v7*v5*v9+v7*v11*v9+v7*v3*v9-v11*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v3+v7*v6*v3-v7*v4*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(v5*v4-v6*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v11-v9)(-v6+v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v11-v9)(-v6+v4)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v5*v11-v7*v11*v6+v7*v11*v4-v5*v11*v4-v8*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v11*v6*v3-v8*v5*v9+v7*v6*v9-v7*v4*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v9)(v11)(-v7+v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5^2+v8*v5*v11+v7*v5*v6-v7*v11*v6+v7*v11*v4-v5*v11*v4
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v11*v3+v11*v6*v3-v7*v4*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v5*v4-v6*v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v5*v4-v6*v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11*v6^2*v3+v11*v6*v4*v3+v8*v5*v6*v9+v11*v6*v4*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v11*v4^2*v9-v8*v6*v3*v9-v8*v6*v9^2+v8*v4*v9^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11*v3-v7*v9)(-v5*v6+v6*v3+v6*v9-v4*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v9)(-v5+v3)(v11*v3-v7*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v7*v4+v8*v3)(v6*v3-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v8*v5*v6-v8*v6*v3-v6^2*v3+v6*v4*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v6*v9+v8*v4*v9+v6*v4*v9-v4^2*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7*v8*v5*v6-v7*v8*v6*v3-v7*v6^2*v3+v8*v6*v3^2-v7*v8*v6*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v7*v8*v4*v9+v7*v6*v4*v9-v8*v4*v3*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v7+v3)(-v5*v6+v6*v3+v6*v9-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(v5-v9)(-v7+v3)(-v5+v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8-v4)(v8)(v6-v4)(-v6*v3+v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v7*v6-v8*v3-v6*v3+v4*v3)(v6*v3-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7^2*v6-v7*v8*v3-v7*v6*v3+v8*v3^2-v7*v4*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ (v6*v3-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v6,v8,v5,v4,v11,v7,v3,v9 (23 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v11*v3+v11*v7*v3+v5*v7*v9-v11*v7*v9+v11*v3*v9-v7*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v11*v3+v8*v11*v3+v8*v5*v9-v8*v11*v9+v4*v11*v9-v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v3+v6*v7*v3-v4*v7*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11-v9)(v7)(-v5+v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6+v4)(v11-v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5*v4-v6*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v11+v5*v4*v11+v6*v11*v7-v4*v11*v7-v6*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v11*v3+v8*v5*v9-v6*v7*v9+v4*v7*v9-v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v6+v4)(v11-v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5^2+v8*v5*v11-v5*v4*v11+v6*v5*v7-v6*v11*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v4*v11*v7+v6*v11*v3-v8*v11*v3-v4*v7*v9+v8*v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5*v4-v6*v3)(v7)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v5*v4-v6*v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7-v3)(v7)(-v11*v3-v5*v9+v11*v9+v3*v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v11*v7*v3+v8*v11*v3^2-v5*v4*v7*v9+v4*v11*v7*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v11*v3*v9+v6*v7*v3*v9+v4*v7*v3*v9-v8*v3^2*v9-v4*v7*v9^2+v8*v3*v9^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v11*v7*v3+v8*v11*v3^2-v8*v5*v7*v9-v5*v4*v7*v9+v8*v11*v7*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v11*v3*v9+2*v6*v7*v3*v9+v8*v7*v3*v9-v8*v3^2*v9-v4*v7*v9^2+v8*v3*v9^2)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v11*v3-v4*v11*v3+v8*v5*v9-v8*v11*v9+v4*v11*v9-v6*v3*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v3*v9+v4*v3*v9)(v8)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v3-v4*v9)(-v4*v7+v8*v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v9)(v7)(-v5+v3)(-v7+v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v7)(-v6*v5+v6*v3+v6*v9-v4*v9)(-v7+v3)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v8*v5*v7-v6^2*v7*v3-v6*v8*v7*v3+v6*v8*v3^2-v6*v8*v7*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v4*v7*v9+v8*v4*v7*v9-v8*v4*v3*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v6*v8*v5-v6^2*v3-v6*v8*v3+v6*v4*v3-v6*v8*v9
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v4*v9+v8*v4*v9-v4^2*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6*v7^2-v6*v7*v3-v8*v7*v3+v8*v3^2-v4*v7*v9+v8*v3*v9)(v6*v3-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v6*v7-v6*v3-v8*v3+v4*v3)(v6*v3-v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v6-v4)(v8-v4)(v8)(-v6*v3+v4*v9)(v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v8,v6,v5,v9,v3,v7,v11 (24 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5+v9)(v3-v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5-v4*v9+v8*v9+v6*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v5-v6*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v11)(-v5+v3)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v9-v11)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v3+v8*v9*v3-v4*v9*v7+v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v9+v8*v9*v3-v4*v9*v7+v6*v9*v7-v4*v5*v11+v8*v5*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v3*v11+v6*v3*v11+v4*v7*v11-v6*v7*v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v4+v6)(v9-v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v5^2-v8*v9*v3-v6*v5*v7+v4*v9*v7+v4*v5*v11-v8*v5*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v3*v11-v6*v3*v11-v4*v7*v11+v6*v7*v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v9*v3-v6*v3^2-v6*v9*v7+v6*v3*v7-v4*v7*v11+v6*v7*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v11)(-v4*v9+v8*v9-v8*v3+v6*v3)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2*v9-v8*v6*v9-v4*v6*v3+v8*v6*v3-v4*v8*v11+v8*v6*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v3)(-v8*v3+v6*v7)(-v9+v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v9-v11)(-v9+v3)(-v3+v7)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v9+v6*v3-v4*v11+v6*v11)(-v3+v7)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v9^2+v6*v9^2+v8*v9*v3-v6*v3^2-v6*v9*v7+v6*v3*v7+v8*v9*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v6*v9*v11+v4*v3*v11-v8*v3*v11-v4*v7*v11+v6*v7*v11)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v6*v9+v6^2*v9-v4*v6*v3+v8*v6*v3+v4^2*v11-v4*v8*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v6*v11-v6^2*v11)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v6*v9*v3-v8*v6*v3^2-v6^2*v9*v7+v4*v6*v3*v7+v4*v8*v3*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v6*v3*v11-v4^2*v7*v11+v6^2*v7*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8^2*v9^2+v8*v6*v9^2+v8^2*v9*v3-v8*v6*v3^2-v6^2*v9*v7
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v4*v6*v3*v7+v8^2*v9*v11-v8*v6*v9*v11+v4*v8*v3*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8^2*v3*v11-v4^2*v7*v11+v6^2*v7*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v8*v6*v9+v6^2*v9-v4*v6*v3+v8*v6*v3+v4^2*v11
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v8*v11+v8*v6*v11-v6^2*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v6*v3-v4*v11)(-v3+v7)(v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v8)(-v4+v6)(v7)(-v6*v3+v4*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v4+v6)(v6*v3-v4*v11)(-v3+v7)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v8)(v8)(-v4+v6)(-v6*v3+v4*v11)(v11)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--- ./output-v4,v8,v5,v6,v11,v9,v3,v7 (25 eqs) ---
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v5-v3)(-v11+v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v11-v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v11*v3+v11*v9*v3+v5*v9*v7-v11*v9*v7+v11*v3*v7-v9*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v3+v8*v9*v3-v4*v9*v7+v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v5*v9-v4*v11*v9+v8*v11*v9-v8*v11*v3+v6*v11*v3+v8*v9*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11+v9)(-v8*v5+v8*v3-v4*v7+v6*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5*v11+v8*v5*v11-v8*v5*v9-v8*v11*v3+v6*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v9*v3+v4*v11*v7-v6*v11*v7-v4*v9*v7+v6*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(-v4+v6)(v11-v9)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v5^2+v4*v5*v11-v8*v5*v11+v8*v11*v3-v6*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v9*v3-v5*v6*v7-v4*v11*v7+v6*v11*v7+v4*v9*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v5*v9+v11*v9-v11*v3+v9*v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v5+v6*v3)(v9)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11+v9)(v9-v3)(-v8*v3+v6*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4*v11*v9*v3+v8*v11*v9*v3-v8*v9^2*v3-v8*v11*v3^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6*v11*v3^2+v8*v9*v3^2+v4*v9^2*v7-v6*v9*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v11+v9)(-v4*v11*v9+v8*v11*v9-v8*v11*v3+v6*v11*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v9*v3+v8*v3^2+v6*v9*v7-v6*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4^2*v11*v9-v8*v6*v11*v9-v4*v8*v9^2+v8*v6*v9^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4*v6*v11*v3+v8*v6*v11*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v11)(-v11+v9)(-v9+v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v6*v11*v9-v4*v9^2+v6*v9^2+v6*v11*v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8*v11^2*v9+v6*v11^2*v9+v8*v11*v9^2-v6*v11*v9^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8*v11^2*v3-v6*v11^2*v3-v4*v9^2*v3-v8*v9^2*v3+v6*v9^2*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v11*v3^2+v6*v11*v3^2+v8*v9*v3^2+v4*v9^2*v7-v6*v9*v3*v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8*v6*v11*v9-v6^2*v11*v9-v4^2*v9^2+v4*v8*v9^2-v8*v6*v9^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v6^2*v9^2-v8*v6*v11*v3+v6^2*v11*v3+v4*v6*v9*v3-v6^2*v9*v3)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v4*v9-v6*v3)(v9)(-v8*v3+v4*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v8^2*v11^2*v9+v8*v6*v11^2*v9+v8^2*v11*v9^2-v8*v6*v11*v9^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ +v8^2*v11^2*v3-v8*v6*v11^2*v3-v8^2*v9^2*v3+v8*v6*v9^2*v3
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8^2*v11*v3^2+v8*v6*v11*v3^2+v8^2*v9*v3^2-v8*v6*v9*v3^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v4^2*v9^2*v7+v4*v8*v9^2*v7+v4*v6*v9*v3*v7-v8*v6*v9*v3*v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(v8)(v8*v6*v11*v9-v6^2*v11*v9-v4^2*v9^2+v4*v8*v9^2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+ -v8*v6*v9^2+v6^2*v9^2-v8*v6*v11*v3+v6^2*v11*v3+v4*v6*v9*v3-v6^2*v9*v3)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v6)(v9)(-v4*v9+v6*v3)(v3-v7)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v8)(-v4+v6)(v9)(-v4*v9+v6*v3)(v7)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+(-v4+v8)(v8)(-v4+v6)(v9)(-v4*v9+v6*v3)
+\end_layout
+
+\begin_layout Standard
+After some investigation one can find two occurences of the collinearity
+ conditions among the equation sets for 15 and 16 equations.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Quotes eld
+\end_inset
+
+Good
+\begin_inset Quotes erd
+\end_inset
+
+ permutations for achieving the collinearity conditions
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Good-permutations-for"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{10}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+\begin_inset CommandInset include
+LatexCommand input
+filename "goodperms.txt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Command-line-options"
+
+\end_inset
+
+New command line options 
+\begin_inset Newline newline
+\end_inset
+
+in GeoGebra
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+New command line options in GeoGebra
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The GeoGebra prover system is designed to be as simple as possible.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+principle!--, KISS
+\end_layout
+
+\end_inset
+
+ Thus there is no way to change its behavior on the graphical user interface.
+\end_layout
+
+\begin_layout Standard
+On the other hand, there is a plenty of configuration settings for the command
+ line for the 
+\emph on
+desktop
+\emph default
+ version.
+ They are listed here, in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Command-line-options"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+While Linux users can easily start GeoGebra on command line, Windows and
+ Mac users may feel uncomfortable with this task.
+ To help them, here we summarize how they can start GeoGebra on command
+ line:
+\end_layout
+
+\begin_layout Itemize
+For Windows users the easiest way is to use the 
+\emph on
+portable
+\emph default
+ version of GeoGebra.
+ After unzipping the bundle, the user needs to start a command interpreter
+ window to enter 
+\family typewriter
+
+\begin_inset Quotes eld
+\end_inset
+
+jre
+\backslash
+bin
+\backslash
+java -jar geogebra.jar
+\family default
+ 
+\family typewriter
+...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in the folder of the unzipped .jar files (that is, first a 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+cd ...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ command may be required by substituting the correct path of GeoGebra---usually
+ it is 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Downloads
+\backslash
+GeoGebra 5.0.
+\bar under
+VVV
+\bar default
+.0
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ where 
+\family typewriter
+\bar under
+VVV
+\family default
+\bar default
+ is the version number).
+ Here 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ stands for the possible command line options (see below).
+ By entering 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+jre
+\backslash
+bin
+\backslash
+java
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ above, the user explicitly asks that the bundled version of Java must be
+ used---by omitting 
+\family typewriter
+
+\begin_inset Quotes eld
+\end_inset
+
+jre
+\backslash
+bin
+\backslash
+
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ the system-wide Java installation will be used (if Java is already installed
+ on the system).
+\end_layout
+
+\begin_layout Itemize
+Mac OS X users may also prefer the 
+\emph on
+portable
+\emph default
+ version.
+ When using Safari, the downloaded file will be unzipped automatically.
+ Now the user needs to start the 
+\emph on
+Terminal
+\emph default
+ and enter 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+java -jar geogebra.jar ...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in the folder of the unzipped .jar files which take place in 
+\family typewriter
+GeoGebra.app/Contents/Java
+\family default
+.
+ (That is, entering 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+cd Downloads/GeoGebra.app/Contents/Java
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ before starting GeoGebra should automatically set the correct folder.) See
+ below for the available command line options 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Linux users will prefer the 
+\emph on
+installed
+\emph default
+ version of GeoGebra.
+ By entering 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+geogebra ...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in a terminal, the command line options can easily be defined.
+\end_layout
+
+\begin_layout Standard
+While we will refer to the command line way for starting GeoGebra as 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+java -jar geogebra.jar ...
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+, the user may still need to maintain the correct path for the 
+\family typewriter
+java
+\family default
+ executable.
+ Above we assumed that the user starts the command interpreter window in
+ his or her home directory (which is the default).
+\end_layout
+
+\begin_layout Section
+Prover options
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Prover-options"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By starting GeoGebra with the 
+\family typewriter
+--proverhelp
+\family default
+ option, the user can get a list of the applicable options (some of them
+ may not be shown in version 5.0, but all of them are usable):
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--prover=OPTIONS              set options for the prover subsystem
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+  where OPTIONS is a comma separated list, formed with the following
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+   available settings (defaults in brackets):
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    engine:ENGINE             set engine (Auto|OpenGeoProver|Recio|Botana|PureSy
+mbolic) [Auto]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    timeout:SECS              set the maximum time attributed to the prover
+ (in seconds) [5]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    maxterms:NUMBER           set the maximal number of terms [10000] (OpenGeoPr
+over only)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    method:METHOD             set the method (Wu|Groebner|Area) [Wu] (OpenGeoPro
+ver only)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    fpnevercoll:BOOLEAN       assume three free points are never collinear
+ for Prove [null]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+                              (Botana only, forced to 'yes' when SingularWS
+ is unavailable)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    usefixcoords:N1N2         use fix coordinates for the first number N1
+ for Prove and N2
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+                              for ProveDetails, maximum of 4 both [42] (Botana
+ only)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    transcext:BOOLEAN         use polynomial ring with coeffs from a transcenden
+tal extension
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+                              for Prove [true] (Botana only, needs SingularWS)
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    captionalgebra:BOOLEAN    show algebraic debug information in object
+ captions [false]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+                              (Botana only)      
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+Example: --prover=engine:Botana,timeout:10,fpnevercoll:true,usefixcoords:43
+\end_layout
+
+\begin_layout Section
+SingularWS options
+\end_layout
+
+\begin_layout Standard
+When starting GeoGebra with the 
+\family typewriter
+--singularwshelp
+\family default
+ option (which is not documented in version 5.0 yet), the following list
+ of options are shown:
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+--singularWS=OPTIONS          set options for SingularWS
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+  where OPTIONS is a comma separated list, formed with the following
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+   available settings (defaults in brackets):
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    enable:BOOLEAN            use Singular WebService when possible [false]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    remoteURL:URL             set the remote server URL [http://singularws.idm.jku.
+at/]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    timeout:SECS              set the timeout [5]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+    caching:BOOLEAN           set server side caching [true]
+\end_layout
+
+\begin_layout LyX-Code
+
+\size scriptsize
+Example: singularWS=timeout:3
+\end_layout
+
+\begin_layout Standard
+By command line options we can run GeoGebra in several useful modes when
+ we want to make some detailed tests:
+\end_layout
+
+\begin_layout Itemize
+It is suggested setting the prover 
+\family typewriter
+timeout
+\family default
+ to 
+\family typewriter
+0
+\family default
+ when testing from Eclipse in debug mode.
+ Example: 
+\family typewriter
+java -jar geogebra.jar --prover=timeout:0
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+To use Botana's method
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+method!--, Botana's
+\end_layout
+
+\end_inset
+
+ exclusively, the 
+\family typewriter
+engine
+\family default
+ must be set to 
+\family typewriter
+Botana
+\family default
+.
+ This will automatically use Singular if there is Internet connection, and
+ SingularWS is enabled.
+ (SingularWS is disabled by default in GeoGebra 5.) When SingularWS is disabled,
+ 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Giac
+\end_layout
+
+\end_inset
+
+Giac will be used.
+ To force Singular, the 
+\family typewriter
+enable
+\family default
+ option must be set to 
+\family typewriter
+true
+\family default
+ for SingularWS.
+ Example: 
+\family typewriter
+java -jar geogebra.jar --prover=engine:Botana --singularWS=enable:true
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+To force Giac not to use prescribed hypotheses for non-degenerate polygons,
+ one should set the 
+\family typewriter
+fpnevercoll
+\family default
+ prover option to 
+\family typewriter
+false
+\family default
+.
+ This will, however, slow down the computation significantly, in most cases.
+\end_layout
+
+\begin_layout Itemize
+Various figures in this PhD thesis were created by using the 
+\family typewriter
+--prover=captionalgebra:true
+\family default
+ setting.
+\end_layout
+
+\begin_layout Itemize
+Benchmarking of SingularWS should always be done by using the 
+\family typewriter
+--prover=caching:false
+\family default
+ to force 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Singular
+\end_layout
+
+\end_inset
+
+Singular to recompute the output.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch NoChildDocument
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "biblio/Plasma"
+options "biblio/alpha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,33 @@
+"Computer Based Conjectures and Proofs in Teaching Euclidean Geometry"
+dissertation to obtain the academic grade "doctor of natural sciences"
+
+by Zoltán Kovács (Johannes Kepler University, Linz, Austria)
+advised by Markus Hohenwarter and Tomás Recio
+submitted in July 2015 and defended in September 2015 in Linz, Austria
+
+
+This folder contains the source files being used for
+creating the dissertation by utilizing the LyX word processor and some
+extra LaTeX packages. The aim of sharing these materials is to add
+improved versions of this document and make it possible for scientific
+researchers to quickly find reliable resources in the topic.
+
+
+To regenerate the PDF document (which is available in its original
+form at http://test.geogebra.org/~kovzol/data/diss/diss-20150708.pdf) you
+may need the following pieces of software tools:
+
+  * Ubuntu Linux 14.04.3
+  * LyX 2.0.8.1
+  * TeX Live 2013.20140215-2
+
+By opening the file "diss.lyx" in LyX it should be possible to view it or
+export it as PDF without any errors. (There may be warning messages.)
+
+
+Please feel free to use any part of the text, or the generated
+figures. Your feedback on any use is highly appreciated, but not
+obligatory. On referencing any part of this material please use the usual
+way of scientific citations.
+
+The authors email address is <zoltan@geogebra.org>.

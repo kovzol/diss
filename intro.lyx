@@ -1,0 +1,351 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsbook
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\master diss.lyx
+\begin_removed_modules
+figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
+eqs-within-sections
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Your title"
+\pdf_author "Your name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #ff0000
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Introduction} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+adds table of contents entry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduction
+\end_layout
+
+\begin_layout Section*
+Abstract
+\end_layout
+
+\begin_layout Standard
+The aim of this dissertation is to identify effective methods on extending
+ teaching of conjectures and proofs of Euclidean geometry theorems in secondary
+ schools by utilizing computers, and to develop corresponding technology
+ and software tools by enhancing existing dynamic geometry systems.
+ Based upon analysis of the possible aims of mathematics teaching and an
+ overview of the existing software tools and the theory,
+\end_layout
+
+\begin_layout Itemize
+a general report highlights areas where computers can indeed help in the
+ teaching process, and areas of typical dangers of abuse of computers are
+ also presented,
+\end_layout
+
+\begin_layout Itemize
+an enhancement of the dynamic mathematics software GeoGebra is introduced
+ to give more support for teachers and students concerning proofs,
+\end_layout
+
+\begin_layout Itemize
+an analysis of an effective mathematical method in theorem proving for the
+ Euclidean geometry is introduced in an effort to help non-expert readers
+ to learn the basics of the applied mathematical algorithms,
+\end_layout
+
+\begin_layout Itemize
+some typical classroom situations are shown by utilizing GeoGebra to support
+ teaching of certain topics in Euclidean geometry.
+\end_layout
+
+\begin_layout Standard
+The results in this dissertation can be considered as a prototype, but they
+ are elaborated enough to be integrated in classroom use already and also
+ for developing it further to provide a wider range of use for teaching
+ of proofs.
+\end_layout
+
+\begin_layout Section*
+Objectives of the thesis
+\end_layout
+
+\begin_layout Standard
+In this dissertation literature about technology integration into mathematics
+ classrooms for teaching of proofs is reviewed, and existing dynamic geometry
+ and automated theorem proving software packages are investigated.
+ The objective of this thesis is to answer the following research questions:
+\end_layout
+
+\begin_layout Enumerate
+Can computers give essential help in learning elementary geometry proofs?
+ What are the important properties of such a computer based educational
+ tool?
+\end_layout
+
+\begin_layout Enumerate
+How can we address typical difficulties in the software implementation of
+ an appropriate educational tool, in particular
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the design of the user interface and the interaction between the user and
+ the software, 
+\end_layout
+
+\begin_layout Enumerate
+the applied algorithms and the implementation issues?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What type of computer aided exercises can be applied in classroom use in
+ teaching of elementary geometry proofs at secondary level?
+\end_layout
+
+\begin_layout Section*
+Structure of the thesis
+\end_layout
+
+\begin_layout Subsection*
+Chapter 1
+\end_layout
+
+\begin_layout Standard
+Chapter 1 deals with the topic mathematics and proofs from an educational
+ perspective.
+ It addresses the first question of the objectives of the thesis.
+\end_layout
+
+\begin_layout Standard
+In Section 1.1 a short overview is shown about the main trends in proofs
+ in mathematics education in the twentieth century, and the influence of
+ computers is discussed.
+ Then the teacher's role is in focus.
+ The main point of Section 1.1 is to analyze the role of Euclidean geometry
+ in conjecturing and proving, which are empowered today by utilizing computer
+ software as well.
+ Since computers are already able to prove geometric theorems automatically,
+ it is a natural question whether we are ready to support computer aided
+ proof teaching as well.
+ Finally, de Villiers' concept on the role of reasoning is discussed by
+ focusing on possible ways to utilize computers.
+\end_layout
+
+\begin_layout Standard
+Section 1.2 depicts the recent situation of computer based proving in mathematics
+ education for elementary geometry.
+ Several computer software packages are reviewed concerning their strengths
+ and weaknesses.
+\end_layout
+
+\begin_layout Subsection*
+Chapter 2
+\end_layout
+
+\begin_layout Standard
+In Chapter 2 a new implementation of a computer based educational proving
+ tool is demonstrated as a submodule of the open dynamic geometry software
+ 
+\emph on
+GeoGebra
+\emph default
+.
+ This chapter focuses on understanding the mathematical point of view, and
+ also discusses questions concerning the implementation.
+ It deals with the second question of the objectives of this thesis.
+\end_layout
+
+\begin_layout Standard
+After an overview in Section 2.1, Section 2.2 describes the need of a general
+ portfolio prover to harness the variety of the applicable mathematical
+ methods and to obtain an implementation built upon the large experience
+ of an international research community of this field.
+ Two new GeoGebra commands are introduced and explained, and their integration
+ into the graphical user interface.
+\end_layout
+
+\begin_layout Standard
+Section 2.3 is a detailed explanation of a popularly used algebraic geometry
+ method (
+\emph on
+the Gröbner basis method
+\emph default
+), emphasizing its basics by the terms of undergraduate level mathematics.
+ An enhanced algorithm is discussed for getting sufficient conditions automatica
+lly inside GeoGebra.
+\end_layout
+
+\begin_layout Standard
+Section 2.4 is a summary of a recent method related to the algebraic geometry
+ method (
+\emph on
+Recio's exact check method
+\emph default
+), but even more effective in some simple situations.
+\end_layout
+
+\begin_layout Standard
+Section 2.5 gives a short overview about the implementation created for extending
+ the GeoGebra application with a theorem proving subsystem.
+\end_layout
+
+\begin_layout Standard
+Finally, Section 2.6 is an evaluation of the implementation by machine generated
+ statistics on some typical geometry problems solved by GeoGebra.
+\end_layout
+
+\begin_layout Subsection*
+Chapter 3
+\end_layout
+
+\begin_layout Standard
+Chapter 3 addresses the third question of the objectives of this thesis.
+\end_layout
+
+\begin_layout Standard
+Section 3.1 is a collection of GeoGebra materials using the new technologies
+ implemented for GeoGebra.
+ This collection can be directly used in secondary school education to introduce
+ teaching proofs.
+ The focus is on the improved 
+\emph on
+Relation Tool
+\emph default
+ which is the highest level entry point in GeoGebra's user interface for
+ the novel capabilities.
+\end_layout
+
+\begin_layout Standard
+Section 3.2 summarizes other possible applications of the implementation
+ and describes some future plans for further improvements.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch NoChildDocument
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesisExample"
+options "alpha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

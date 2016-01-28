@@ -1,0 +1,571 @@
+{\scriptsize
+\begin{longtable}{|l|*{7}{cr|}}
+\hline
+{\multirow{2}{*}{\bf Test}}
+& \multicolumn{2}{c|}{\bf Recio}
+& \multicolumn{2}{c|}{\bf PSymb.}
+& \multicolumn{2}{c|}{\bf Sing.}
+& \multicolumn{2}{c|}{\bf Giac}
+& \multicolumn{2}{c|}{\bf OGP W.}
+& \multicolumn{2}{c|}{\bf OGP A.}
+& \multicolumn{2}{c|}{\bf Auto}
+\\
+&R.&S.
+&R.&S.
+&R.&S.
+&R.&S.
+&R.&S.
+&R.&S.
+&R.&S.
+\\ \hline
+\cellcolor{blue!10}lines-parallel 
+& \cellcolor{green!60}f & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!50}f & \cellcolor{green!50}{ 31} 
+& \cellcolor{green!50}f & \cellcolor{green!50}{ 45} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 257} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{ 62} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{\sl 76} 
+& \cellcolor{green!60}f & \cellcolor{green!60}{ 6} 
+\\ \hline
+\cellcolor{blue!10}points-col$\ldots$ar 
+& \cellcolor{green!60}f & \cellcolor{green!60}{\bf 4} 
+& \cellcolor{green!60}f & \cellcolor{green!60}{ 12} 
+& \cellcolor{green!50}f & \cellcolor{green!50}{ 27} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 238} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{ 61} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{\sl 79} 
+& \cellcolor{green!60}f & \cellcolor{green!60}{ 5} 
+\\ \hline
+\cellcolor{blue!10}points-equal 
+& \cellcolor{green!60}f & \cellcolor{green!60}{\bf 7} 
+& \cellcolor{green!60}f & \cellcolor{green!60}{ 11} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{\sl 97} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 232} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{ 63} 
+& \cellcolor{green!40}f & \cellcolor{green!40}{ 71} 
+& \cellcolor{green!60}f & \cellcolor{green!60}{ 7} 
+\\ \hline
+\cellcolor{blue!10}bisector-m$\ldots$nt 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 3} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 19} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 94} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 248} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 80} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 85} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 3} 
+\\ \hline
+\cellcolor{blue!10}centroid-m$\ldots$o1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 5} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 38} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 252} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 492} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 131} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 243} 
+\\ \hline
+\cellcolor{blue!10}centroid-m$\ldots$o2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 19} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 237} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 70} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 83} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 325} 
+\\ \hline
+\cellcolor{blue!10}Ceva1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 54} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 299} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 64} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 81} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 388} 
+\\ \hline
+\cellcolor{blue!10}Ceva2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 16} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 235} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 66} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 87} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 358} 
+\\ \hline
+\cellcolor{blue!10}Ceva3 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 22} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 236} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 79} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 89} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 356} 
+\\ \hline
+\cellcolor{blue!10}circumcenter1 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 37} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 38} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 268} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 212} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 103} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 6} 
+\\ \hline
+\cellcolor{blue!10}circumcenter2 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 9} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 32} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 40} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 243} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 117} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 99} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 9} 
+\\ \hline
+\cellcolor{blue!10}circumcenter3 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 7} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 29} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 36} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 242} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 129} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 89} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 4} 
+\\ \hline
+\cellcolor{blue!10}circumcenter4 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 3} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 26} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 41} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 258} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 140} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 91} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 8} 
+\\ \hline
+\cellcolor{blue!10}circumcenter5 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 5} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 41} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 243} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 106} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 96} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 247} 
+\\ \hline
+\cellcolor{blue!10}circumcenter6 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 12} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 59} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 101} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 256} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 127} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 104} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 15} 
+\\ \hline
+\cellcolor{blue!10}construct-$\ldots$ne 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 23} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 246} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 88} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 93} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 346} 
+\\ \hline
+\cellcolor{blue!10}construct-$\ldots$nt 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 10} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 228} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 83} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 87} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 319} 
+\\ \hline
+\cellcolor{blue!10}def-line-p$\ldots$ne 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 10} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 37} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 244} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 70} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 72} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 5} 
+\\ \hline
+\cellcolor{blue!10}def-points$\ldots$e1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 9} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 53} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 262} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 189} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 87} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 261} 
+\\ \hline
+\cellcolor{blue!10}def-points$\ldots$e2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 6} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 53} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 274} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 140} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 88} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 266} 
+\\ \hline
+\cellcolor{blue!10}def-points$\ldots$ne 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 12} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 46} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 237} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 69} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 72} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 3} 
+\\ \hline
+\cellcolor{blue!10}Desargues 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ t/o} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 39} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3133} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 781} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 86} 
+& \cellcolor{green!10}t & \cellcolor{green!10}{ 4583} 
+\\ \hline
+\cellcolor{blue!10}EulerLine 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 19} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 544} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 43} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 254} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 673} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 209} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 14} 
+\\ \hline
+\cellcolor{blue!10}foot-exists 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 17} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 40} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 242} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 261} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 75} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 243} 
+\\ \hline
+\cellcolor{blue!10}incenter1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 9} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 228} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\bf 470} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 65} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 638} 
+\\ \hline
+\cellcolor{blue!10}line-circl$\ldots$on 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 52} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 242} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 86} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 84} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 247} 
+\\ \hline
+\cellcolor{blue!10}nine-point$\ldots$le 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 24} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ t/o} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 63} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 269} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 399} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 75} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 25} 
+\\ \hline
+\cellcolor{blue!10}orthocenter1 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 12} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 105} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 46} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 248} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 191} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 77} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 12} 
+\\ \hline
+\cellcolor{blue!10}orthocenter2 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 10} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 30} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 40} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 237} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 104} 
+& \cellcolor{red!25}f & \cellcolor{red!25}{ 659} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 7} 
+\\ \hline
+\cellcolor{blue!10}orthocenter3 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 7} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 31} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 53} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 257} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 125} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 75} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 6} 
+\\ \hline
+\cellcolor{blue!10}orthocenter4 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 32} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 39} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 249} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 126} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 69} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 8} 
+\\ \hline
+\cellcolor{blue!10}orthocenter5 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 12} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 68} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 106} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 274} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 116} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 132} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 11} 
+\\ \hline
+\cellcolor{blue!10}orthocenter6 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 11} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 30} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 54} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 241} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 107} 
+& \cellcolor{red!25}f & \cellcolor{red!25}{ 675} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 13} 
+\\ \hline
+\cellcolor{blue!10}orthocenter7 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 5} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 63} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 68} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 257} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 120} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 133} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 11} 
+\\ \hline
+\cellcolor{blue!10}Pappus 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 6} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ t/o} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 43} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 567} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 686} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 84} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 617} 
+\\ \hline
+\cellcolor{blue!10}parallelog$\ldots$ls 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 14} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 70} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 97} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 254} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 365} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ t/o} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 13} 
+\\ \hline
+\cellcolor{blue!10}point-equal 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 4} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 12} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 68} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 234} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 64} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 72} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 4} 
+\\ \hline
+\cellcolor{blue!10}powerline-$\ldots$ar 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 7} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 41} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 254} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 144} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 83} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 249} 
+\\ \hline
+\cellcolor{blue!10}Pythagoras 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 15} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 228} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 56} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{\bf 78} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 307} 
+\\ \hline
+\cellcolor{blue!10}reflection1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 9} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 233} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 61} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 64} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 230} 
+\\ \hline
+\cellcolor{blue!10}regular-tr$\ldots$le 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 5} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 39} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 245} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 107} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 87} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 243} 
+\\ \hline
+\cellcolor{blue!10}rotate1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 12} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 231} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 70} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 76} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 299} 
+\\ \hline
+\cellcolor{blue!10}Simson1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 45} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 674} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 279} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 159} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 966} 
+\\ \hline
+\cellcolor{blue!10}Simson2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 8} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 41} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 707} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 233} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 183} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{ 942} 
+\\ \hline
+\cellcolor{blue!10}square1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 41} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 250} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 85} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 85} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 247} 
+\\ \hline
+\cellcolor{blue!10}square2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 40} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 243} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 113} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 87} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 243} 
+\\ \hline
+\cellcolor{blue!10}square3 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 9} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 38} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 246} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 98} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 89} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 251} 
+\\ \hline
+\cellcolor{blue!10}symmedians 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 17} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 236} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 70} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 71} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 329} 
+\\ \hline
+\cellcolor{blue!10}Thales1 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 38} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 243} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 191} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ t/o} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 266} 
+\\ \hline
+\cellcolor{blue!10}Thales2 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 2} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 39} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 246} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 97} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 80} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 258} 
+\\ \hline
+\cellcolor{blue!10}Thales3 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 3} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{\bf 39} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 261} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 126} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 89} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 252} 
+\\ \hline
+\cellcolor{blue!10}triangle-areas 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 4} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 52} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 290} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 68} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\bf 318} 
+& \cellcolor{yellow!25} & \cellcolor{yellow!25}{ 338} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$ns 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 8} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 40} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 40} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{ 242} 
+& \cellcolor{green!20}t & \cellcolor{green!20}{\sl 500} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 73} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 4} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$t1 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 7} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 15} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 33} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 245} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 71} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 79} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 8} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$t2 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 7} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 13} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 32} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 241} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 77} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 71} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 7} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$t3 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 10} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 36} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 238} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 70} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 72} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 7} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$t4 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 15} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 22} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 245} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 76} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 71} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 4} 
+\\ \hline
+\cellcolor{blue!10}triangle-m$\ldots$t5 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 6} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 15} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 36} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 235} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 76} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 79} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 5} 
+\\ \hline
+\cellcolor{blue!10}true 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 1} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 1} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 1} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 1} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\sl 2} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 2} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 2} 
+\\ \hline
+\cellcolor{blue!10}Varignon 
+& \cellcolor{green!60}t & \cellcolor{green!60}{\bf 8} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 14} 
+& \cellcolor{green!50}t & \cellcolor{green!50}{ 32} 
+& \cellcolor{green!30}t & \cellcolor{green!30}{\sl 249} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 91} 
+& \cellcolor{green!40}t & \cellcolor{green!40}{ 81} 
+& \cellcolor{green!60}t & \cellcolor{green!60}{ 9} 
+\\ \hline
+{\bf Total (of 60)}
+&\multicolumn{2}{c|}{\bf 30}
+&\multicolumn{2}{c|}{\bf 29}
+&\multicolumn{2}{c|}{\bf 48}
+&\multicolumn{2}{c|}{\bf 42}
+&\multicolumn{2}{c|}{\bf 48}
+&\multicolumn{2}{c|}{\bf 42}
+&\multicolumn{2}{c|}{\bf 54}
+\\ \hline
+\end{longtable}
+}

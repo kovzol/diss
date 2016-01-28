@@ -1,0 +1,117 @@
+\lstset{basicstyle=\small,keywordstyle=\color{red},commentstyle=\bfseries,showstringspaces=false,stringstyle=\ttfamily,identifierstyle=\color{blue}}
+\begin{lstlisting}[language=C]
+// Remove unneeded elements of G (we assume G is a Groebner
+// basis) by minimalizing.
+proc gb_minimize(list G) {
+ list R, O1, O2, O;
+ int i, j, last;
+ poly lmi, Gj, lmj;
+ string delim = ",";
+ print("\\begin{itemize}");
+ for (i=1; i <= size(G); i++) {
+  R[i] = 1;
+  }
+ for (i = 1; i <= size(G); i++) {
+  if (R[i] == 1) {
+   lmi = leadmonom(G[i]);
+   for (j = 1; j <= size(G); j++) {
+    if (i != j && R[j] == 1) {
+     lmj = leadmonom(G[j]);
+     if (lmj / lmi != 0) {
+      print("");
+      printf("\\item Removing (%s) since its leading term $%s$ "
+       + "is a multiple of leading term $%s$ in (%s).", j,
+       texpoly("", lmj), texpoly("", lmi), i);
+      R[j] = 0;
+      } // if 3
+     } // if 2
+    } // for 2
+   } // if 1
+  } // for 1
+ print("\\end{itemize}");
+ print("An echelon form of the equation system is:");
+ print("\\begin{align*}");
+ for (i = 1; i <= size(G); i++) {
+  if (R[i] == 1) {
+   last = i;
+   }
+  }
+ for (i = 1; i <= size(G); i++) {
+  if (i == last) {
+   delim = ".";
+   }
+  if (R[i] == 1) {
+   printf("%s&= 0%s &&(%s)\\\\", texpoly("",G[i]), delim, i);
+   O1 = append(O1, G[i]);
+   O2 = appendi(O2, i);
+   }
+  }
+ print("\\end{align*}");
+ O = appendl(O, O1);
+ O = appendl(O, O2);
+ return(O);
+ }
+
+// Simplify G (we assume G is a Groebner basis) by final
+// (non-lead-)reduction.
+proc gb_fred(list G, list N) {
+ list R;
+ int i, j, f;
+ poly Gi, Gj, s, lmi, lmj;
+ string delim = ",";
+ f = 1;
+ print("\\begin{itemize}");
+ for (i = 1; i <= size(G); i++) {
+  R[i] = "";
+  }
+ while (f == 1) {
+  f = 0;
+  for (i = 1; i <= size(G); i++) {
+   lmi = leadmonom(G[i]);
+   for (j = 1; j <= size(G); j++) {
+    if (i != j) {
+     Gj = G[j];
+     while (Gj != 0) {
+      lmj = leadmonom(Gj);
+      if (lmj / lmi != 0) {
+       s = G[j] - (lmj / lmi * leadcoef(Gj)) * G[i];
+       if (s != 0) {
+        printf("\\item $(%s%s)$ can be reduced by $(%s%s)$ to $%s$", 
+         N[j], R[j], N[i], R[i], texpoly("", s));
+        if (leadcoef(s) != 1) {
+         s = s / leadcoef(s);
+         printf(" $\\sim %s$", texpoly("", s));
+         }
+        printf("$(%s%s')$, equation updated.", N[j], R[j]);
+        R[j] = R[j] + "'";
+        G[j] = s;
+        Gj = 0; // technical
+        f = 1;
+        } // if 3
+       } // if 2
+      Gj = Gj - lmj * leadcoef(Gj);
+      } // while
+     } // if 1
+    } // for 2
+   } // for 1
+  } // while
+ print("\\end{itemize}");
+ print("The minimal reduced normed form of the equation " +
+  "system is:");
+ print("\\begin{align*}");
+ for (i=1; i<= size(G); i++) {
+  if (i == size(G)) {
+   delim = ".";
+   }
+  printf("%s&= 0%s &&(%s%s)\\\\", texpoly("",G[i]), delim,
+   N[i], R[i]);
+  }
+ print("\\end{align*}");
+ }
+
+// Main program.
+begin_document();
+list gb = buchberger(input);
+gb_fred(gb_minimize(gb));
+end_document();
+\end{lstlisting}

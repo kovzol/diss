@@ -1,0 +1,324 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+% enable calculations
+\usepackage{calc}
+
+% increase the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\master diss.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Abstract"
+\pdf_author "Your name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Summary
+\end_layout
+
+\begin_layout Standard
+The aim of this dissertation was to identify effective methods on extending
+ teaching of conjectures and proofs of Euclidean geometry theorems in secondary
+ schools by utilizing computers, and to develop corresponding technology
+ and software tools by enhancing existing dynamic geometry systems.
+ Based upon analysis of the possible aims of mathematics teaching and an
+ overview of the existing software tools and the theory,
+\end_layout
+
+\begin_layout Itemize
+a general report in Chapter 1 highlighted areas where computers can indeed
+ help in the teaching process, and areas of typical dangers of abuse of
+ computers are also presented.
+\end_layout
+
+\begin_layout Itemize
+An enhancement of the dynamic mathematics software GeoGebra was introduced
+ in Chapter 2 to give more support for teachers and students concerning
+ proofs.
+\end_layout
+
+\begin_layout Itemize
+As a part of Chapter 2, an analysis of the Gröbner basis method in theorem
+ proving for the Euclidean geometry was introduced in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-Gröbner-basis"
+
+\end_inset
+
+ in an effort to help non-expert readers to learn the basics of the applied
+ mathematical algorithms.
+\end_layout
+
+\begin_layout Itemize
+In Chapter 3 some typical classroom situations were shown by utilizing GeoGebra
+ to support teaching of certain topics in Euclidean geometry.
+\end_layout
+
+\begin_layout Standard
+The results in this dissertation can be considered as a prototype, but they
+ are elaborated enough to be integrated in classroom use already and also
+ for developing it further to provide a wider range of use for teaching
+ of proofs.
+\end_layout
+
+\begin_layout Section*
+Objectives of the thesis
+\end_layout
+
+\begin_layout Standard
+In Chapter 1 literature about technology integration into mathematics classrooms
+ for teaching of proofs was reviewed, and existing dynamic geometry and
+ automated theorem proving software packages were investigated.
+ The objective of this thesis was to answer the following research questions:
+\end_layout
+
+\begin_layout Enumerate
+Can computers give essential help in learning elementary geometry proofs?
+ What are the important properties of such a computer based educational
+ tool?
+\end_layout
+
+\begin_layout Enumerate
+How can we address typical difficulties in the software implementation of
+ an appropriate educational tool, in particular
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the design of the user interface and the interaction between the user and
+ the software, 
+\end_layout
+
+\begin_layout Enumerate
+the applied algorithms and the implementation issues?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What type of computer aided exercises can be applied in classroom use in
+ teaching of elementary geometry proofs at secondary level?
+\end_layout
+
+\begin_layout Standard
+Here the summarized answers are listed:
+\end_layout
+
+\begin_layout Enumerate
+Certain activities like 
+\emph on
+experimenting
+\emph default
+, 
+\emph on
+controlled discovery
+\emph default
+, 
+\emph on
+verifications
+\emph default
+ and 
+\emph on
+collecting relationships
+\emph default
+ are well supported by some computer software tools.
+ Other activities like creating a 
+\emph on
+per theory framework
+\emph default
+, 
+\emph on
+obtaining readable proofs
+\emph default
+ and 
+\emph on
+confirmation
+\emph default
+ are partially supported.
+ 
+\emph on
+Uncontrolled discovery
+\emph default
+ is not yet supported.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Important properties of such computer based educational tools are 
+\emph on
+effective algorithms
+\emph default
+ and 
+\emph on
+simple, straightforward user interface
+\emph default
+.
+ Extensibility and long availability of such tools may require an 
+\emph on
+open development model
+\emph default
+.
+ (See page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "fig:The-gap-between"
+
+\end_inset
+
+.)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Typical difficulties in the software implementation of an appropriate educationa
+l tool may include
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+major improvement of an existing user interface by 
+\emph on
+keeping it intuitive, simple and straightforward
+\emph default
+ (see page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "sub:The-Relation-Tool"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+speed issues
+\emph default
+ (see page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "sub:Comparison"
+
+\end_inset
+
+) and obtaining useful extra output to describe 
+\emph on
+degeneracy conditions
+\emph default
+ (see page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "benchmark-provedetails"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+In Chapter 3 the 
+\emph on
+Relation Tool
+\emph default
+ in GeoGebra 5 was introduced.
+ The ATP extension of the Relation Tool was implemented as supplementary
+ work for this PhD thesis.
+ The Relation Tool in GeoGebra 5 can help finding and formulizing conjectures.
+ A textbook written for teaching introductory elementary geometry was selected
+ with a number of examples and the utilization of the Relation Tool was
+ demonstrated.
+\begin_inset Newline newline
+\end_inset
+
+The final examples of this dissertation have also been uploaded to 
+\emph on
+GeoGebraTube
+\emph default
+ as a 
+\emph on
+GeoGebraBook
+\emph default
+ (see page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "fig:ggbook"
+
+\end_inset
+
+).
+\end_layout
+
+\end_body
+\end_document
